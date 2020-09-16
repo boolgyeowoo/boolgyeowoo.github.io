@@ -1,0 +1,19 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #3f3f3f;
+    /*    background-image: url(../img/home.jpg);*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*min-height: 1280px;*/
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: sans-serif;
+    font-weight: 400;
+    src: https: //fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap;
+    unicode-range: U+AC00-U+D7A3;
+    
+}
