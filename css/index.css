@@ -1,59 +1,28 @@
 /*@import url(https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap);*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
 
     
 body {
-/*    background-color: #3f3f3f;*/
-/*
-    background-image: url(../img/home.jpg);
+    background-color: rgba(0, 0, 0, 0.15); /*logo overlay color*/
+    background-image: url(../img/home1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-*/
-/*    background-color: rgba(255,0,0,0.25);*/
+    background-blend-mode: multiply; /*logo overlay*/
     margin: 0;
-    color: #000;
+    color: #fafafa;
     
-    font-family: 'Roboto', sans-serif;
+/*    font-family: 'Roboto', sans-serif;*/
+    font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     
 }
 
-.test{
-/*
-    background-image: url(../img/home.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-*/
-    background-color: rgba(255,255,0,0.25);
-}
-
-/*
-body:after {
-  position: absolute;
-  content: " ";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: rgba(0, 0, 0, 0.25);
-}
-*/
-
-.test:before {
-    background-image: url(../img/home.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
 
 #headroom {
-    height: 20vh;
+    height: 22vh;
 }
 
 .container {
@@ -65,16 +34,18 @@ body:after {
     margin-bottom: auto;
 }
 
-#homelogo {
-/*
-    transition:transform 250ms, background-color 150ms;
-    transform:translate(20px, 20px);
-*/
+img.homelogo {
+    transition: background-color 150ms, width 150ms ;
     padding: 20px;
-    width: 600px;
+    width: 40vw;
 }
 
-#homelogo:hover {
-    transition: background-color 150ms ;
+img.homelogo:hover {
+    transition: background-color 150ms, width 150ms ;
     background-color: rgba(255,255,255, 0.15);
+    width:39.75vw;
+}
+
+a.homelogo{
+    height: 30vh;
 }
