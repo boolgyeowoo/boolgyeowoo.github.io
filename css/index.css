@@ -3,20 +3,35 @@
 
     
 body {
-    background-color: #3f3f3f;
+/*    background-color: #3f3f3f;*/
+/*
     background-image: url(../img/home.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
+*/
+/*    background-color: rgba(255,0,0,0.25);*/
     margin: 0;
-    color: #fff;
+    color: #000;
     
     font-family: 'Roboto', sans-serif;
     font-size: 2em;
     
 }
 
+.test{
+/*
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+*/
+    background-color: rgba(255,255,0,0.25);
+}
+
+/*
 body:after {
   position: absolute;
   content: " ";
@@ -26,6 +41,15 @@ body:after {
   height: 100%;
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.25);
+}
+*/
+
+.test:before {
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }
 
 #headroom {
