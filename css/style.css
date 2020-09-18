@@ -4,7 +4,6 @@
     
 body {
     background-color: #3f3f3f;
-/*    background-image: url(../img/home.jpg);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -13,12 +12,20 @@ body {
     color: #fff;
     
     font-family: 'Roboto', sans-serif;
-    font-size: 2em;
+    font-size: 1.5em;
     
 }
 
-/*codes for change font of korean characters*/
-/*
+
+@media (max-width: 767px) {
+    body {
+        width: auto;
+    }
+}
+
+
+
+/*codes for change font of korean characters but it doesn't works*/
 @font-face {
     font-family: 'Nanum Gothic';
     font-style: sans-serif;
@@ -26,26 +33,29 @@ body {
     src: url(https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap);
     unicode-range: U+00AC00-U+00D7A3;
 }
-*/
 
-.container {
+
+#mainlogo {
+    padding: 20px;
+    width: 210px;
+}
+
+#mainlogo:hover {
+    transition: all 150ms ;
+    width: 200px;
+}
+
+header {
+    height: 200px;
+}
+
+.mainheader{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    margin-bottom: auto;
+/*    align-items: center;*/
 }
 
-#homelogo {
-    transition:transform 250ms, background-color 150ms;
-    transform:translate(20px, 20px);
-    background-color: rgba(255, 255, 255, 0.2);
-    padding: 20px;
-    width: 600px;
-}
-
-#homelogo:hover {
-    transition: background-color 150ms ;
-    background-color: rgba(255,255,255, 0);
+header p {
+    position: fixed;
 }
