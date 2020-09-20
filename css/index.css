@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@100&display=swap');
 
 
 body {
@@ -95,4 +94,9 @@ a.homelogo {
 #twitter, #mail, #twitch {
     width: 48px;
     min-width: 32px;
+}
+
+#twitch {
+    position: relative;
+    top: 4px;
 }
