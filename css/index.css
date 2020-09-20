@@ -87,3 +87,8 @@ nav>ul>li{
 .nav_sub:hover{
     display: inline;
 }
+
+#twitter, #mail, #twitch {
+    width: 48px;
+    min-width: 32px;
+}
