@@ -1,20 +1,17 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 
 body {
-    background-color: rgba(0, 0, 0, 0.15); /*logo overlay color*/
-/*    background-image: url(../img/index/home1.jpg);*/
+    background-color: rgba(0, 0, 0, 0.15); /*overlay color*/
+    background-image: url(../img/index/home1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
-    background-blend-mode: multiply; /*logo overlay*/
+    background-blend-mode: multiply; /*overlay*/
     margin: 0;
-    
-/*    font-family: 'Roboto', sans-serif;*/
-    font-family: 'Montserrat', sans-serif;
-/*    font-size: ;*/
+    font-family: 'Roboto', sans-serif;
 }
 
 /*div*/
@@ -29,6 +26,7 @@ body {
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
+/*    height: 80vh;*/
 }
 
 img.homelogo {
@@ -58,26 +56,28 @@ a.homelogo {
 
 #name {
     padding: 10px;
-    font: sans-serif 100 0.8em 'Montserrat';
+    font-family: 'Montserrat';
+    font-style: sans-serif;
+    font-weight: 100;
+    font-size: 1.5em;
     color: #fafafa;
 }
 
-nav>ul>li{
-    border: 5px red;
-}
-
 .nav_main{
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 10vh;
+    height: 8vh;
 /*
     -webkit-columns: ;
     -moz-columns: ;
     -o-columns: ;
 */
     column-count: 4;
+    position: sticky;
+    display: absolute;
 }
 
 .nav_sub{
@@ -86,6 +86,10 @@ nav>ul>li{
 
 .nav_sub:hover{
     display: inline;
+}
+
+.sns{
+    width: 360px;
 }
 
 #twitter, #mail, #twitch {
