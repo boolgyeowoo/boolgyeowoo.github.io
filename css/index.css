@@ -13,6 +13,12 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+@media (max-width:767px) {
+    body {
+        background-image: url(../img/index/home.jpg);
+    }
+}
+
 /*div*/
 #headroom {
     height: 22vh;
@@ -26,6 +32,10 @@ body {
     margin-top: auto;
     margin-bottom: auto;
 /*    height: 80vh;*/
+}
+
+.main_elements {
+/*    height: 90vh;*/
 }
 
 img.homelogo {
