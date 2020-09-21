@@ -5,38 +5,40 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="bgimg.js"></script>
 </head>
 
-<body>
+<body id="bgImage">
     <div class="container">
         <div id="headroom"></div>
         <a class="homelogo" href="featured.html">
-            <img class="homelogo" src="img/BYW_logo_BK.svg" alt="sites main logo black">
+            <img class="homelogo" src="img/BYW_logo_WH.svg" alt="sites main logo black">
         </a>
         <p id="name">boolgyeowoo</p>
     </div>
+    <div id="room"></div>
+    <nav class="sns">
+        <a href="https://twitter.com/boolgyeowoo">
+            <img id="twitter" src="/img/icon/Twitter_Logo_WhiteOnImage.svg" alt="Twitter link">
+        </a>
+        <a href="mailto:boolgyeowoo@gmail.com">
+            <img id="mail" src="/img/icon/mail.svg" alt="e-mail adress">
+        </a>
+        <a href="https://twitch.tv/boolgyeowoo"><img id="twitch" src="/img/icon/TwitchGlitchWhite.svg" alt="Twitch link"></a>
+    </nav>
     <footer>
-        <nav class="sns">
-            <a href="https://twitter.com/boolgyeowoo">
-                <img id="twitter" src="/img/icon/Twitter_Logo_WhiteOnImage.svg" alt="Twitter link">
-            </a>
-            <a href="mailto:boolgyeowoo@gmail.com">
-                <img id="mail" src="/img/icon/mail.svg" alt="e-mail adress">
-            </a>
-            <a href="https://twitch.tv/boolgyeowoo"><img id="twitch" src="/img/icon/TwitchGlitchWhite.svg" alt="Twitch link"></a>
-        </nav>
         <nav>
             <ul class="nav_main">
-                <li><a href="index.html">home</a></li>
-                <li><a href="featured.html">featured</a></li>
+                <li><a class="nav_link" href="index.html">home</a></li>
+                <li><a class="nav_link" href="featured.html">featured</a></li>
                 <li>
-                    <a href="photo.html">photo</a>
+                    <a class="nav_link" href="photo.html">photo</a>
                     <ul class="nav_sub">
                         <li><a href="photo/session.html">sessions</a></li>
                         <li><a href="photo/all.html">all photo</a></li>
                     </ul>
                 </li>
-                <li><a href="about.html">about</a></li>
+                <li><a class="nav_link" href="about.html">about</a></li>
             </ul>
         </nav>
     </footer>
