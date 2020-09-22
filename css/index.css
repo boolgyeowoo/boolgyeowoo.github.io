@@ -41,7 +41,7 @@ ul {
 
 img.homelogo {
     transition: background-color 150ms, width 150ms;
-    padding: 1vh;
+    padding: 2vh;
     width: 40vw;
     min-width: 600px;
     opacity: 1.0;
@@ -56,7 +56,7 @@ img.homelogo:hover {
 
 img.homelogo:active {
     transition: background-color 150ms, width 150ms;
-    width: 37vw;
+    width: 38vw;
 /*    height: 18vh;*/
 }
 
@@ -72,9 +72,28 @@ img.homelogo:active {
     img.homelogo:active {
         width: 55vw
     }
+    
+    #name {
+        font-size: 2rem;
+    }
 }
 
-a.homelogo {
+@media (max-width:719) {
+    .nav_main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 7vh;
+        text-align: justify;
+        column-count: 4;
+        column-gap: 3vw;
+        margin: 0px;
+        width: auto;
+    }
+}
+
+div.homelogo {
     height: 20vh;
     display: flex;
     flex-direction: column;
@@ -82,6 +101,7 @@ a.homelogo {
     align-items: center;
 }
 
+/*div*/
 #padding {
     height: 3vh;
 }
@@ -99,24 +119,39 @@ a.homelogo {
     color: #fafafa;
 }
 
+/*div*/
 #room {
     height: 32vh;
 }
 
 .nav_link {
-    font-size: 1rem;
+    display: inline-block;
+    font-size: 1.25rem;
     transition: all 125ms;
     color: #111111;
-    padding: 10px 20px;
     border: rgba(0,0,0,0) solid 1px;
     box-sizing: border-box;
-/*    position: fixed;*/
+    height: 5vh;
+    width: 10vw;
+    min-width: 100px;
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav_link:hover {
     transition: all 200ms;
 /*    color: #f0f0f0;*/
 /*    background-color: #111111;*/
+    border: #111111 solid 1px;
+}
+
+.nav_link:active {
+    transition: all 200ms;
+    color: #f0f0f0;
+    background-color: #111111;
     border: #111111 solid 1px;
 }
 
@@ -129,9 +164,9 @@ a.homelogo {
     height: 7vh;
     text-align: justify;
     column-count: 4;
-    column-gap: 15vw;
-    display: absolute;
+    column-gap: 10vw;
     margin: 0px;
+    padding: 0px;
 }
 
 .nav_sub {
