@@ -29,7 +29,6 @@ ul {
     height: 22vh;
 }
 
-/*
 .container {
     display: flex;
     flex-direction: column;
@@ -37,28 +36,42 @@ ul {
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
-        height: 80vh;
+/*    height: 80vh;*/
 }
-*/
 
 img.homelogo {
-    transition: background-color 150ms, height 150ms;
-    padding: 10px;
-    /*    width: 40vw;*/
-    height: 20vh;
+    transition: background-color 150ms, width 150ms;
+    padding: 1vh;
+    width: 40vw;
+    min-width: 600px;
     opacity: 1.0;
 }
 
 img.homelogo:hover {
-    transition: background-color 150ms, height 150ms;
+    transition: background-color 150ms, width 150ms;
     background-color: rgba(255, 255, 255, 0.15);
-    /*    width:39vw;*/
-    height: 20vh;
+    width: 40vw;
+/*    height: 20vh;*/
 }
 
 img.homelogo:active {
-    transition: background-color 150ms, height 150ms;
-    height: 15vh;
+    transition: background-color 150ms, width 150ms;
+    width: 37vw;
+/*    height: 18vh;*/
+}
+
+/*for vertical display*/
+@media (orientation: portrait) {
+    img.homelogo {
+        width: 60vw;
+        min-width: 300px;
+    }
+    img.homelogo:hover {
+        width: 60vw;
+    }
+    img.homelogo:active {
+        width: 55vw
+    }
 }
 
 a.homelogo {
@@ -67,6 +80,10 @@ a.homelogo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+#padding {
+    height: 3vh;
 }
 
 #name {
@@ -78,30 +95,29 @@ a.homelogo {
     font-family: 'Montserrat';
     font-style: sans-serif;
     font-weight: 200;
-    font-size: 1.75rem;
+    font-size: 2rem;
     color: #fafafa;
 }
 
 #room {
-    height: 34vh;
+    height: 32vh;
 }
 
 .nav_link {
-/*
-    display: inline-block;
-    min-width: 100px;
-*/
+    font-size: 1rem;
     transition: all 125ms;
     color: #111111;
     padding: 10px 20px;
-    border: #111111 solid 1px;
+    border: rgba(0,0,0,0) solid 1px;
     box-sizing: border-box;
+/*    position: fixed;*/
 }
 
 .nav_link:hover {
     transition: all 200ms;
-    color: #f0f0f0;
-    background-color: #111111;
+/*    color: #f0f0f0;*/
+/*    background-color: #111111;*/
+    border: #111111 solid 1px;
 }
 
 .nav_main {
@@ -115,6 +131,7 @@ a.homelogo {
     column-count: 4;
     column-gap: 15vw;
     display: absolute;
+    margin: 0px;
 }
 
 .nav_sub {
