@@ -3,6 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    transition: all 500ms cubic-bezier(.55,.085,.68,.53) 0s;
 }
 
 #bgImage {
@@ -13,9 +14,7 @@ body {
     min-height: 100vh;
     background-blend-mode: multiply; /*overlay*/
     margin: 0;
-    transition: background 1s ease;
-/*    transition-delay: 400ms;*/
-/*    transition: all 240ms cubic-bezier(.55,.085,.68,.53);*/
+    transition: background 500ms cubic-bezier(.55,.085,.68,.53) 0s;
 }
 
 a {
@@ -104,9 +103,28 @@ img.homelogo:active {
     }
 }
 
+/*for mobile browser*/
+@media (orientation: portrait) and (max-width: 768px) {
+    #name {
+        font-size: 2.5rem;
+    }
+    .nav_link {
+        font-size: 1.75rem;
+    }
+}
+
+/*for desktop browser*/
 @media (min-width: 720px) {
     .nav_main {
         column-gap: 10vw;
+    }
+    
+    #name {
+        font-size: 2rem;
+    }
+    
+    .nav_link {
+        font-size: 1.25rem;
     }
 }
 
@@ -132,7 +150,7 @@ div.homelogo {
     font-family: 'Montserrat';
     font-style: sans-serif;
     font-weight: 200;
-    font-size: 2rem;
+/*    font-size: 2rem;*/
     color: #fafafa;
 }
 
@@ -143,13 +161,14 @@ div.homelogo {
 
 .nav_link {
     display: inline-block;
-    font-size: 1.25rem;
     transition: all 125ms;
     color: #111111;
     border: rgba(0,0,0,0) solid 1px;
     box-sizing: border-box;
     height: 5vh;
     width: 10vw;
+    min-height: 40px;
+    max-height: 100px;
     min-width: 100px;
     max-width: 200px;
     display: flex;
@@ -181,6 +200,8 @@ div.homelogo {
     column-count: 4;
     margin: 0px;
     padding: 0px;
+    min-height: 60px;
+    max-height: 120px;
 }
 
 .nav_sub {
