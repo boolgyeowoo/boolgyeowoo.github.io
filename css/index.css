@@ -7,14 +7,13 @@ body {
 
 #bgImage {
     background-color: rgba(0, 0, 0, 0.15); /*overlay color*/
-    background-image: url(../img/index/home_1.jpg);
+    background-image: url(../img/index/home.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-blend-mode: multiply; /*overlay*/
     margin: 0;
-    
 }
 
 a {
@@ -37,7 +36,6 @@ ul {
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
-/*    height: 80vh;*/
 }
 
 img.homelogo {
@@ -52,13 +50,11 @@ img.homelogo:hover {
     transition: background-color 150ms, width 150ms;
     background-color: rgba(255, 255, 255, 0.15);
     width: 40vw;
-/*    height: 20vh;*/
 }
 
 img.homelogo:active {
     transition: background-color 150ms, width 150ms;
     width: 38vw;
-/*    height: 18vh;*/
 }
 
 /*for vertical display*/
@@ -99,10 +95,16 @@ img.homelogo:active {
         height: 7vh;
         text-align: justify;
         column-count: 4;
-        column-gap: 0px;
+        column-gap: 3vw;
         margin: 0px;
         width: auto;
         padding: 0px;
+    }
+}
+
+@media (min-width: 720px) {
+    .nav_main {
+        column-gap: 10vw;
     }
 }
 
@@ -156,8 +158,6 @@ div.homelogo {
 
 .nav_link:hover {
     transition: all 200ms;
-/*    color: #f0f0f0;*/
-/*    background-color: #111111;*/
     border: #111111 solid 1px;
 }
 
@@ -177,8 +177,6 @@ div.homelogo {
     height: 7vh;
     text-align: justify;
     column-count: 4;
-/*    column-width: 10%;*/
-    column-gap: 30px;
     margin: 0px;
     padding: 0px;
 }
