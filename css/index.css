@@ -90,6 +90,7 @@ img.homelogo:active {
         column-gap: 3vw;
         margin: 0px;
         width: auto;
+        padding: 0px;
     }
 }
 
@@ -121,7 +122,7 @@ div.homelogo {
 
 /*div*/
 #room {
-    height: 32vh;
+    height: 28vh;
 }
 
 .nav_link {
