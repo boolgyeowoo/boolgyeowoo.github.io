@@ -14,6 +14,7 @@ body {
     min-height: 100vh;
     background-blend-mode: multiply; /*overlay*/
     margin: 0;
+    
 }
 
 a {
@@ -74,11 +75,22 @@ img.homelogo:active {
     }
     
     #name {
+        font-size: 3rem;
+    }
+    
+    .nav_link {
         font-size: 2rem;
+    }
+    
+    #twitter,
+    #mail,
+    #twitch {
+        width: 5vw;
+        min-width: 32px;
     }
 }
 
-@media (max-width:719) {
+@media (max-width: 719px) {
     .nav_main {
         display: flex;
         flex-direction: row;
@@ -87,7 +99,7 @@ img.homelogo:active {
         height: 7vh;
         text-align: justify;
         column-count: 4;
-        column-gap: 3vw;
+        column-gap: 0px;
         margin: 0px;
         width: auto;
         padding: 0px;
@@ -165,7 +177,8 @@ div.homelogo {
     height: 7vh;
     text-align: justify;
     column-count: 4;
-    column-gap: 10vw;
+/*    column-width: 10%;*/
+    column-gap: 30px;
     margin: 0px;
     padding: 0px;
 }
