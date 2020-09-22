@@ -7,13 +7,15 @@ body {
 
 #bgImage {
     background-color: rgba(0, 0, 0, 0.15); /*overlay color*/
-    background-image: url(../img/index/home.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     background-blend-mode: multiply; /*overlay*/
     margin: 0;
+    transition: background 1s ease;
+/*    transition-delay: 400ms;*/
+/*    transition: all 240ms cubic-bezier(.55,.085,.68,.53);*/
 }
 
 a {
@@ -191,6 +193,7 @@ div.homelogo {
 
 .sns {
     display: inline;
+    padding-left: 15px;
 }
 
 #twitter,
