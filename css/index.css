@@ -2,7 +2,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-/*    transition: all 500ms cubic-bezier(.55,.085,.68,.53) 0s;*/
 }
 
 #bgImage {
@@ -13,7 +12,6 @@ body {
     min-height: 100vh;
     background-blend-mode: multiply; /*overlay*/
     margin: 0;
-/*    transition: background 500ms cubic-bezier(.55,.085,.68,.53) 0s;*/
 }
 
 a {
@@ -24,11 +22,6 @@ ul {
     list-style-type: none;
 }
 
-/*div*/
-#headroom {
-    height: 22vh;
-}
-
 .container {
     display: flex;
     flex-direction: column;
@@ -36,6 +29,8 @@ ul {
     align-items: center;
     margin-top: auto;
     margin-bottom: auto;
+    position: relative;
+    top: 22vh;
 }
 
 img.homelogo {
@@ -70,14 +65,6 @@ img.homelogo:active {
         width: 50vw
     }
     
-    #name {
-        font-size: 2rem;
-    }
-    
-    .nav_link {
-        font-size: 1.25rem;
-    }
-    
     #twitter,
     #mail,
     #twitch {
@@ -87,6 +74,10 @@ img.homelogo:active {
 }
 
 @media (max-width: 719px) {
+    div.homelogo {
+        width: 60vw;
+    }
+    
     .nav_main {
         display: flex;
         flex-direction: row;
@@ -102,44 +93,22 @@ img.homelogo:active {
     }
 }
 
-/*for mobile browser*/
-/*
-@media (orientation: portrait) and (max-width: 768px) {
-    #name {
-        font-size: 2.5rem;
-    }
-    .nav_link {
-        font-size: 1.75rem;
-    }
-}
-*/
-
 /*for desktop browser*/
 @media (min-width: 720px) {
+    div.homelogo {
+        height: 20vh;
+    }
+    
     .nav_main {
         column-gap: 10vw;
-    }
-    
-    #name {
-        font-size: 2rem;
-    }
-    
-    .nav_link {
-        font-size: 1.25rem;
     }
 }
 
 div.homelogo {
-    height: 20vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-/*div*/
-#padding {
-    height: 3vh;
 }
 
 #name {
@@ -148,10 +117,12 @@ div.homelogo {
     justify-content: center;
     align-items: center;
     padding: 10px;
+    position: relative;
+    top: 3vh;
     font-family: 'Montserrat';
     font-style: sans-serif;
     font-weight: 200;
-/*    font-size: 2rem;*/
+    font-size: 2rem;
     color: #fafafa;
 }
 
@@ -160,13 +131,20 @@ div.homelogo {
     height: 28vh;
 }
 
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
 .nav_link {
     display: inline-block;
     transition: all 125ms;
     color: #111111;
     border: rgba(0,0,0,0) solid 1px;
     box-sizing: border-box;
-    height: 5vh;
+    height: 4vh;
     width: 10vw;
     min-height: 40px;
     max-height: 100px;
@@ -176,6 +154,7 @@ div.homelogo {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 1.25rem;
 }
 
 .nav_link:hover {
@@ -191,12 +170,12 @@ div.homelogo {
 }
 
 .nav_main {
-    background-color: rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.9);
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 7vh;
+    height: 6vh;
     text-align: justify;
     column-count: 4;
     margin: 0px;
@@ -205,23 +184,18 @@ div.homelogo {
     max-height: 120px;
 }
 
-.nav_sub {
-    display: none;
-}
-
-.nav_sub:hover {
-    display: inline;
-}
-
 .sns {
     display: inline;
-    padding-left: 15px;
+    position: fixed;
+    right: 15px;
+    top: 1vh;
 }
 
 #twitter,
 #mail,
 #twitch {
-    width: 48px;
+    width: 3vw;
+    max-width: 48px;
     min-width: 32px;
 }
 
