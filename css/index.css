@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap');
 
-
 body {
     font-family: 'Roboto', sans-serif;
 /*    transition: all 500ms cubic-bezier(.55,.085,.68,.53) 0s;*/
@@ -72,11 +71,11 @@ img.homelogo:active {
     }
     
     #name {
-        font-size: 3rem;
+        font-size: 2rem;
     }
     
     .nav_link {
-        font-size: 2rem;
+        font-size: 1.25rem;
     }
     
     #twitter,
