@@ -3,7 +3,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    transition: all 500ms cubic-bezier(.55,.085,.68,.53) 0s;
+/*    transition: all 500ms cubic-bezier(.55,.085,.68,.53) 0s;*/
 }
 
 #bgImage {
@@ -14,7 +14,7 @@ body {
     min-height: 100vh;
     background-blend-mode: multiply; /*overlay*/
     margin: 0;
-    transition: background 500ms cubic-bezier(.55,.085,.68,.53) 0s;
+/*    transition: background 500ms cubic-bezier(.55,.085,.68,.53) 0s;*/
 }
 
 a {
@@ -68,7 +68,7 @@ img.homelogo:active {
         width: 60vw;
     }
     img.homelogo:active {
-        width: 55vw
+        width: 50vw
     }
     
     #name {
@@ -104,6 +104,7 @@ img.homelogo:active {
 }
 
 /*for mobile browser*/
+/*
 @media (orientation: portrait) and (max-width: 768px) {
     #name {
         font-size: 2.5rem;
@@ -112,6 +113,7 @@ img.homelogo:active {
         font-size: 1.75rem;
     }
 }
+*/
 
 /*for desktop browser*/
 @media (min-width: 720px) {
