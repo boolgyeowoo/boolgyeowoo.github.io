@@ -3,27 +3,26 @@
 
     
 body {
-    background-color: #3f3f3f;
+    background-color: #fafafa;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
-    color: #fff;
+    color: #111111;
     
     font-family: 'Roboto', sans-serif;
-    font-size: 0.8rem;
+    font-size: 1rem;
     
 }
 
-
-@media (max-width: 767px) {
-    body {
-        width: auto;
-    }
+a {
+    text-decoration: none;
 }
 
-
+ul {
+    list-style-type: none;
+}
 
 /*codes for change font of korean characters but it doesn't works*/
 @font-face {
@@ -34,10 +33,13 @@ body {
     unicode-range: U+00AC00-00D7A3;
 }
 
+.header {
+    width: 20vw;
+    border: rgba(0,0,0,0) solid 5px;
+}
 
-#mainlogo {
-    padding: 20px;
-    width: 210px;
+.sitelogo {
+    width: 70%;
 }
 
 #mainlogo:hover {
@@ -45,17 +47,10 @@ body {
     width: 200px;
 }
 
-header {
-    height: 200px;
-}
 
 .mainheader{
     display: flex;
     flex-direction: column;
     justify-content: center;
 /*    align-items: center;*/
-}
-
-header > p {
-    position: normal;
 }
