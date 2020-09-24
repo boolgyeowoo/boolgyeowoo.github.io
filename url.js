@@ -1,10 +1,10 @@
 $(document).ready(function () {
-  $(document).on('click', '.control nav a', function (event) {
+  $(document).on('click', '.header li a', function (event) {
     history.pushState(null, null, event.target.href);
-    $('article').load(event.target.href+' article>.content');
+    $('main').load(event.target.href+' section>.main');
     event.preventDefault();
   })
   $(window).on('popstate', function(event){
-    $('article').load(location.href+' article>.content');
+    $('main').load(location.href+' section>.main');
   })
 });

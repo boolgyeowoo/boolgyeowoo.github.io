@@ -1,44 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+minimum-scale=1.0, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="url.js"></script>
-    <title>featured - boolgyeowoo</title>
+    <title>featured - boolgyeowoo photo</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
 <body>
+   <div class="container">
     <header class="header">
-        <ul>
-            <li><a href="index.html">
-                    <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black">
-                </a></li>
-            <li><a onclick="fetch('about')">about</a></li>
-            <li><a href="featured.html">featured</a></li>
-            <li><a href="session.html">sessions</a></li>
-            <li><a href="all.html">all photo</a></li>
+        <a class="sitelogo" href="index.html">
+            <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black">
+        </a>
+        <ul class="nav_mobl">
+            <li><a class="nav_link_m" href="about.html">about</a></li>
+            <li><a class="nav_link_m" href="featured.html">featured</a></li>
+            <li><a class="nav_link_m" href="session.html">sessions</a></li>
+            <li><a class="nav_link_m" href="all.html">all photo</a></li>
+        </ul>
+        <ul class="nav_main">
+            <li><a class="nav_link" href="about.html">about</a></li>
+            <li><a class="nav_link" href="featured.html">featured</a></li>
+            <li><a class="nav_link" href="session.html">sessions</a></li>
+            <li><a class="nav_link" href="all.html">all photo</a></li>
         </ul>
     </header>
     
     <section id="main">
-        
+        <p>여기에 사진을 배치</p>
     </section>
+   </div>
     <footer class="footer">
-        <p>footer</p>
+        <p>Copyright 2020. boolgyeowoo All rights reserved.</p>
     </footer>
-    <script>
-      function fetchPage(name){
-        fetch(name).then(function(response){
-          response.text().then(function(text){
-            document.querySelector('article').innerHTML = text;
-          })
-        });
-      }
-    </script>
 </body>
 
 </html>

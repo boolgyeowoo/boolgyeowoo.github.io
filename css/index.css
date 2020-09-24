@@ -44,7 +44,6 @@ img.homelogo {
 img.homelogo:hover {
     transition: background-color 150ms, width 150ms;
     background-color: rgba(255, 255, 255, 0.15);
-    width: 40vw;
 }
 
 img.homelogo:active {
