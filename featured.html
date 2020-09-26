@@ -12,30 +12,51 @@ minimum-scale=1.0, width=device-width">
     <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
+<script type="text/javascript">
+    jQuery(document).ready(function($) {
+        // hide the menu when the page load
+        $(".nav_mobl").hide();
+        // when .menuBtn is clicked, do this
+        $(".menu_icon").click(function() {
+            // open the menu with slide effect
+            $(".nav_mobl").slideToggle(300);
+        });
+    });
+
+</script>
+
 <body>
-   <div class="container">
-    <header class="header">
-        <a class="sitelogo" href="index.html">
-            <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black">
-        </a>
-        <ul class="nav_mobl">
-            <li><a class="nav_link_m" href="about.html">about</a></li>
-            <li><a class="nav_link_m" href="featured.html">featured</a></li>
-            <li><a class="nav_link_m" href="session.html">sessions</a></li>
-            <li><a class="nav_link_m" href="all.html">all photo</a></li>
-        </ul>
-        <ul class="nav_main">
-            <li><a class="nav_link" href="about.html">about</a></li>
-            <li><a class="nav_link" href="featured.html">featured</a></li>
-            <li><a class="nav_link" href="session.html">sessions</a></li>
-            <li><a class="nav_link" href="all.html">all photo</a></li>
-        </ul>
-    </header>
-    
-    <section id="main">
-        <p>여기에 사진을 배치</p>
-    </section>
-   </div>
+    <div class="container">
+        <header class="header">
+           <div class="mob_header">
+            <span id="logo_img">
+                <!--logo image-->
+                <a class="sitelogo" href="index.html">
+                    <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black">
+                </a>
+            </span>
+            <span class="menu_icon">
+                <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
+            </span>
+           </div>
+            
+            <ul class="nav_mobl">
+                <li class="nav_link_m"><a class="nav_link_m" href="about.html">about</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="featured.html">featured</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="session.html">sessions</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="all.html">all photo</a></li>
+            </ul>
+            <ul class="nav_main">
+                <li><a class="nav_link" href="about.html">about</a></li>
+                <li><a class="nav_link" href="featured.html">featured</a></li>
+                <li><a class="nav_link" href="session.html">sessions</a></li>
+                <li><a class="nav_link" href="all.html">all photo</a></li>
+            </ul>
+        </header>
+        <section id="main">
+            <p>여기에 사진을 배치</p>
+        </section>
+    </div>
     <footer class="footer">
         <p>Copyright 2020. boolgyeowoo All rights reserved.</p>
     </footer>

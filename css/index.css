@@ -61,7 +61,7 @@ img.homelogo:active {
         width: 60vw;
     }
     img.homelogo:active {
-        width: 50vw
+        width: 55vw
     }
     
     #twitter,
@@ -72,7 +72,7 @@ img.homelogo:active {
     }
 }
 
-@media (max-width: 719px) {
+@media (min-width: 480px) and (max-width: 719px) {
     div.homelogo {
         width: 60vw;
     }
@@ -89,6 +89,12 @@ img.homelogo:active {
         margin: 0px;
         width: auto;
         padding: 0px;
+    }
+}
+
+@media (max-width: 479px) {
+    .nav_main {
+        column-gap: 0;
     }
 }
 
