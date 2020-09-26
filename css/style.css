@@ -25,24 +25,13 @@ ul.nav_main {
     padding: 0;
     padding-top: 2vh;
     margin: 0;
-/*    border-top: #d1d1d1 solid 1px;*/
 }
 
 ul.nav_mobl {
     background-color: #fafafa;
     display: none;
-/*    border-top: #d1d1d1 solid 1px;*/
-/*    border-bottom: #d1d1d1 solid 1px;*/
 }
 
-/*codes for change font of korean characters but it doesn't works*/
-@font-face {
-    font-family: 'Nanum Gothic';
-    font-style: sans-serif;
-    font-weight: 400;
-    src: url(https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap);
-    unicode-range: U+00AC00-00D7A3;
-}
 
 .container {
     display: flex;
@@ -56,7 +45,6 @@ ul.nav_mobl {
     min-width: 110px;
     max-width: 300px;
     height: 100vh;
-/*    border-right: #d1d1d1 solid 1px;*/
     background-color: #fafafa;
     position: fixed;
 }
@@ -87,11 +75,6 @@ a.sitelogo {
 }
 
 .menu_icon {
-    /*
-    position: relative;
-    right: 1vw;
-    top: 1vh;
-*/
     width: 5vw;
     height: 3vh;
     display: none;
@@ -113,7 +96,6 @@ a.sitelogo {
     padding-bottom: 1.25vh;
     color: #111111;
     font-size: 1.5rem;
-    /*    margin: 1vh 0;*/
     border: rgba(0, 0, 0, 0) solid 1px;
 }
 
@@ -129,13 +111,23 @@ a.sitelogo {
     color: #fafafa;
 }
 
+.selected {
+    color: #fafafa;
+    background-color: #7f7f7f;
+    border: #7f7f7f solid 1px
+}
+
+.selected:hover {
+    background-color: #fafafa;
+    color: #111111;
+}
+
 #main {
     width: 75vw;
     position: relative;
     left: 20vw;
     top: 3vh;
-    height: 120vh;
-    /*for testing*/
+    height: 120vh; /*for testing*/
     border: #f1f1f1 solid 1px;
     z-index: -1;
 }
@@ -157,6 +149,18 @@ footer {
 }
 
 
+
+/*codes for change font of korean characters but it doesn't works*/
+@font-face {
+    font-family: 'Nanum Gothic';
+    font-style: sans-serif;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap);
+    unicode-range: U+00AC00-00D7A3;
+}
+
+
+
 /*layout for mobile*/
 
 @media (max-width:800px) , (orientation: portrait) {
@@ -169,7 +173,6 @@ footer {
     .header {
         width: 100vw;
         border: none;
-/*        border-bottom: #d1d1d1 solid 1px;*/
         height: 8vh;
         min-height: 64px;
         max-width: none;
