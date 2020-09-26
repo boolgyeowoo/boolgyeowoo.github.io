@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0,
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0,
 minimum-scale=1.0, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -14,12 +14,12 @@ minimum-scale=1.0, width=device-width">
 
 <script type="text/javascript">
     jQuery(document).ready(function($) {
-        // hide the menu when the page load
         $(".nav_mobl").hide();
-        // when .menuBtn is clicked, do this
         $(".menu_icon").click(function() {
-            // open the menu with slide effect
             $(".nav_mobl").slideToggle(300);
+        });
+        $( window ).resize(function() {
+            $(".nav_mobl").hide();
         });
     });
 
