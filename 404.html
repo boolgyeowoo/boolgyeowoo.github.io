@@ -3,13 +3,55 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>404NotFound</title>
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0,
+minimum-scale=1.0, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/404.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script/mobl_nav.js"></script>
+    <title>404 - boolgyeowoo photo</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicon.png" type="image/png">
 </head>
 
 <body>
-    <a href="index.html"><img src="img/BYW_logo_BK_c.svg" alt=""></a>
-    <p>this page is not available</p>
+    <div class="container">
+        <header class="header">
+           <div class="mob_header">
+            <span id="logo_img">
+                <a class="sitelogo" href="index.html">
+                    <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black">
+                </a>
+            </span>
+            <span class="menu_icon">
+                <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
+            </span>
+           </div>
+            
+            <ul lang="en" class="nav_mobl">
+                <li class="nav_link_m"><a class="nav_link_m" href="about.html">about</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="featured.html">featured</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="session.html">sessions</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="all.html">all photo</a></li>
+            </ul>
+            <ul lang="en" class="nav_main">
+                <li><a class="nav_link" href="about.html">about</a></li>
+                <li><a class="nav_link" href="featured.html">featured</a></li>
+                <li><a class="nav_link" href="session.html">sessions</a></li>
+                <li><a class="nav_link" href="all.html">all photo</a></li>
+            </ul>
+        </header>
+        <section id="main">
+            <h1>Error:404 Not Found</h1>
+            <p>존재하지 않는 페이지 입니다.</p>
+            <p>아직 개발되지 않았거나 업데이트되지 않았을 수 있으니 조금만 기다려 주세요!</p>
+            <p lang="en">This Page is not available yet.</p>
+            <a class="backlink" href="javascript:history.back()">이전페이지로 돌아가기</a>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>Copyright 2020. boolgyeowoo All rights reserved.</p>
+    </footer>
 </body>
 
 </html>

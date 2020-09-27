@@ -4,10 +4,20 @@
     box-sizing: border-box;
 }
 
+/*codes for english and korean font*/
+*:lang(ko) {
+    font-family: 'Nanum Gothic';
+    font-weight: 400;
+}
+
+*:lang(en) {
+    font-family: 'Roboto';
+    font-weight: 300;
+}
+
 body {
     background-color: #fafafa;
     color: #111111;
-    font-family: 'Roboto', sans-serif;
     font-size: 1rem;
     margin: 0;
     overflow: hidden;
@@ -82,10 +92,10 @@ a.sitelogo {
 
 .icon_bar {
     display: inline-block;
-    width: 20px;
+    width: 22px;
     height: 2px;
     margin: 0;
-    background-color: #7f7f7f;
+    background-color: #292929;
 }
 
 .nav_link {
@@ -127,9 +137,10 @@ a.sitelogo {
     position: relative;
     left: 20vw;
     top: 3vh;
-    height: 120vh; /*for testing*/
-    border: #f1f1f1 solid 1px;
-    z-index: -1;
+    z-index: 0;
+    /*for testing*/
+    height: 120vh; 
+/*    border: #f1f1f1 solid 1px;*/
 }
 
 footer {
@@ -150,14 +161,6 @@ footer {
 
 
 
-/*codes for change font of korean characters but it doesn't works*/
-@font-face {
-    font-family: 'Nanum Gothic';
-    font-style: sans-serif;
-    font-weight: 400;
-    src: url(https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap);
-    unicode-range: U+00AC00-00D7A3;
-}
 
 
 
@@ -176,6 +179,7 @@ footer {
         height: 8vh;
         min-height: 64px;
         max-width: none;
+        z-index: 1;
     }
 
     .mob_header {
@@ -214,19 +218,19 @@ footer {
     #iconbar_top {
         position: relative;
         top: -11px;
-        left: 2px;
+        left: 1px;
     }
     
     #iconbar_mid {
         position: relative;
         top: -21px;
-        left: 2px;
+        left: 1px;
     }
     
     #iconbar_btm {
         position: relative;
         top: -31px;
-        left: 2px;
+        left: 1px;
     }
     
     .menu_icon:active {
@@ -239,8 +243,8 @@ footer {
     }
     
     ul.nav_mobl {
-        display: relative;
-        top: 2vh;
+        position: relative;
+/*        top: 2vh;*/
         padding: 1vh 0;
         z-index: 999;
         background-color: #fafafa;

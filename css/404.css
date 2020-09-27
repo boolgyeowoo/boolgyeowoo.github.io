@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+h1 {
+    font-family: 'Montserrat';
+    font-size: 2rem;
+    font-style: bold;
+}
+
+p {
+    font-size: 1.125rem;
+}
+
+p:lang(en) {
+    font-size: 1.25rem;
+}
+
+.backlink {
+    display: inline;
+    color: #111111;
+    padding: 15px;
+    position: relative;
+    top: 5vh;
+    border: #111111 solid 1px;
+    transition: all 250ms;
+}
+
+.backlink:hover {
+    transition: all 250ms;
+    background-color: #111111;
+    color: #fafafa;
+}
