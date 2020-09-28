@@ -135,7 +135,7 @@ a.sitelogo {
 #main {
     width: 75vw;
     position: relative;
-    left: 20vw;
+    left: 22vw;
     top: 3vh;
     z-index: 0;
     /*for testing*/
@@ -244,7 +244,6 @@ footer {
     
     ul.nav_mobl {
         position: relative;
-/*        top: 2vh;*/
         padding: 1vh 0;
         z-index: 999;
         background-color: #fafafa;
