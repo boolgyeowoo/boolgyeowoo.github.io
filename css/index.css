@@ -48,7 +48,7 @@ img.homelogo:hover {
 
 img.homelogo:active {
     transition: background-color 150ms, width 150ms;
-    width: 38vw;
+    width: 95%;
 }
 
 /*for vertical display*/
@@ -61,7 +61,7 @@ img.homelogo:active {
         width: 60vw;
     }
     img.homelogo:active {
-        width: 55vw
+        width: 90%;
     }
     
     #twitter,
@@ -90,11 +90,34 @@ img.homelogo:active {
         width: auto;
         padding: 0px;
     }
+    
+    img.homelogo{
+        min-width: 250px;
+    }
+    img.homelogo:active {
+        width: 90%;
+    }
 }
 
 @media (max-width: 479px) {
     .nav_main {
         column-gap: 0;
+    }
+    
+    img.homelogo{
+        min-width: 250px;
+    }
+    img.homelogo:active {
+        width: 90%;
+    }
+}
+
+@media (max-height: 480px) {
+    div.homelogo {
+        height: 10vh;
+    }
+    img.homelogo:active {
+        width: 90%;
     }
 }
 
