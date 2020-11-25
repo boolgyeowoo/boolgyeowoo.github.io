@@ -6,7 +6,7 @@ h1 {
     font-style: bold;
 }
 
-p {
+p.content_p {
     font-size: 1.125rem;
 }
 

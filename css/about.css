@@ -1,0 +1,18 @@
+#chiv_logo {
+    height:12vh;
+    max-height: 200px;
+    min-height: 30px;
+}
+
+.chiv_studio {
+    padding: 1vh 1vw;
+/*    margin: 1vw;*/
+    background-color: #fff;
+    box-sizing: content-box;
+    height: 14vh;
+    display: inline-block;
+}
+
+a .chiv_studio {
+
+}

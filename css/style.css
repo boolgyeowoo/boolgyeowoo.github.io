@@ -133,20 +133,20 @@ a.sitelogo {
 }
 
 #main {
-    width: 75vw;
+    width: 70vw;
     position: relative;
-    left: 22vw;
-    top: 3vh;
+    left: 23vw;
+    top: 8vh;
     z-index: 0;
     /*for testing*/
-    height: 120vh; 
+/*    height: 120vh; */
 /*    border: #f1f1f1 solid 1px;*/
 }
 
 footer {
-    position: static;
+    position: relative;
     left: 0;
-    bottom: 0;
+    bottom: -100px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -292,7 +292,7 @@ footer {
     }
     
     #main {
-        height: 120vh;
+        width: 90vw;
         position: relative;
         left: 0;
         top: 10vh;
