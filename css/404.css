@@ -29,3 +29,7 @@ p:lang(en) {
     background-color: #111111;
     color: #fafafa;
 }
+
+footer.footer{
+    top: 60vh;
+}
