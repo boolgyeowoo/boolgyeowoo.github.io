@@ -17,7 +17,7 @@
 .content {
     display: flex;
     flex-direction: row;
-/*    column-width: 23vw;*/
+    flex-grow: 1;
     column-gap: 1vw;
 }
 
