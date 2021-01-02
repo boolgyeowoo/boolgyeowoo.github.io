@@ -37,6 +37,20 @@ div.headercontent {
     flex-direction: row;
 }
 
+.menu_icon {
+    width: 5vw;
+    height: 3vh;
+    display: none;
+}
+
+.icon_bar {
+    display: inline-block;
+    width: 22px;
+    height: 2px;
+    margin: 0;
+    background-color: #292929;
+}
+
 .nav_link {
     display: inline-block;
     transition: all 125ms;
@@ -55,6 +69,7 @@ div.headercontent {
     align-items: center;
     font-size: 1.25rem;
 }
+
 
 .nav_link:hover {
     transition: all 200ms;
@@ -108,6 +123,9 @@ div.maincontent {
     width: 500px;
 }
 
+
+
+
 @media (orientation: portrait) or (max-width: 800px) {
     header.header {
         padding: 0;
@@ -116,9 +134,9 @@ div.maincontent {
     .menu_icon {
         display: inline-block;
         z-index: 1; 
-        position: fixed;
-        right: 4vh;
-        top: 2.5vh;
+        position: relative;
+        left: 28vw;
+        top: 0vh;
         width: 24px;
         height: 24px;
     }
