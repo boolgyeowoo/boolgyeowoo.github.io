@@ -5,7 +5,7 @@
 }
 
 .horz {
-    height: 22vw;
+    width: 22vw;
     max-height: 480px;
     min-height: 240px;
 }
@@ -17,7 +17,7 @@
 .content {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+/*    column-width: 23vw;*/
     column-gap: 1vw;
 }
 
@@ -29,21 +29,4 @@
     column-rule-style: solid;
     column-rule-width: 5px;
     column-rule-color: red;
-}
-
-@media (max-width:480px) , (orientation: portrait) {
-    .featured_img{
-        width: 80vw;
-    }
-    .horz{
-        height: auto;
-        min-height: 0;
-        max-height: 960px;
-        min-width: 240px;
-    }
-    .vert{
-        min-width: 240px;
-        max-width: 960px;
-        height: auto;
-    }
 }
