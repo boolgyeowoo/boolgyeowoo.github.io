@@ -47,6 +47,7 @@ ul.nav_mobl {
     display: flex;
     flex-direction: row;
     padding-bottom: 2vh;
+    box-sizing: content-box;
 }
 
 
