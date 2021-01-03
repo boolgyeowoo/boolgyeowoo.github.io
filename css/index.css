@@ -190,7 +190,16 @@ footer {
     }
     
     #name {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
+    }
+    
+    .nav_main {
+        min-height: 50px;
+    }
+    
+    .nav_link {
+        font-size: 1.1rem;
+        min-height: 36px;
     }
 }
 
