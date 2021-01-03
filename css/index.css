@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300&family=Open+Sans:wght@300&display=swap');
 
+/*font set*/
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
+/*background image design*/
 #bgImage {
     background-color: rgba(0, 0, 0, 0.15); /*overlay color*/
     background-size: cover;
@@ -14,6 +16,7 @@ body {
     margin: 0;
 }
 
+/*decoration clear*/
 a {
     text-decoration: none;
 }
@@ -21,6 +24,7 @@ a {
 ul {
     list-style-type: none;
 }
+
 
 .container {
     display: flex;
@@ -33,6 +37,35 @@ ul {
     top: 22vh;
 }
 
+div.homelogo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 27vh;
+}
+
+/*div; space between logo and name*/
+#room {
+    height: 28vh;
+}
+
+#name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    position: relative;
+    top: 3vh;
+    font-family: 'Montserrat';
+    font-style: sans-serif;
+    font-weight: 200;
+    font-size: 2rem;
+    color: #fafafa;
+}
+
+/*logo transition*/
 img.homelogo {
     transition: background-color 150ms, width 150ms;
     padding: 2vh;
@@ -51,137 +84,6 @@ img.homelogo:active {
     width: 38vw;
 }
 
-/*for vertical display*/
-@media (orientation: portrait) {
-    img.homelogo {
-        transition: background-color 150ms, width 150ms;
-        width: 60vw;
-        min-width: 300px;
-    }
-    img.homelogo:hover {
-        transition: background-color 150ms, width 150ms;
-        width: 60vw;
-    }
-    img.homelogo:active {
-        transition: background-color 150ms, width 150ms;
-        width: 55vw;
-        min-width: 275px;
-    }
-    
-    #twitter,
-    #mail,
-    #twitch {
-        width: 5vw;
-        min-width: 32px;
-    }
-}
-
-@media (orientation: portrait) and (max-width: 500px) {
-        img.homelogo {
-        width: 60vw;
-        min-width: 300px;
-    }
-    img.homelogo:hover {
-        width: 60vw;
-    }
-    img.homelogo:active {
-        width: 60vw;
-        min-width: 300px;
-    }
-}
-
-
-@media (min-width: 480px) and (max-width: 719px) {
-    div.homelogo {
-        width: 60vw;
-    }
-    
-    .nav_main {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 7vh;
-        text-align: justify;
-        column-count: 4;
-        column-gap: 3vw;
-        margin: 0px;
-        width: auto;
-        padding: 0px;
-    }
-/*
-    
-    img.homelogo{
-        min-width: 250px;
-    }
-    img.homelogo:active {
-        width: 90%;
-    }
-*/
-}
-
-@media (max-width: 479px) {
-    .nav_main {
-        column-gap: 0;
-    }
-    
-/*
-    img.homelogo{
-        min-width: 250px;
-    }
-    img.homelogo:active {
-        width: 90%;
-    }
-}
-
-@media (max-height: 480px) {
-    div.homelogo {
-        height: 10vh;
-    }
-    img.homelogo:active {
-        width: 90%;
-    }
-*/
-}
-
-/*for desktop browser*/
-@media (min-width: 720px) {
-    div.homelogo {
-        height: 20vh;
-    }
-    
-    .nav_main {
-        column-gap: 10vw;
-    }
-}
-
-div.homelogo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 27vh;
-}
-
-#name {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    position: relative;
-    top: 3vh;
-    font-family: 'Montserrat';
-    font-style: sans-serif;
-    font-weight: 200;
-    font-size: 2rem;
-    color: #fafafa;
-}
-
-/*div*/
-#room {
-    height: 28vh;
-}
 
 footer {
     position: fixed;
@@ -200,7 +102,7 @@ footer {
     width: 10vw;
     min-height: 40px;
     max-height: 100px;
-    min-width: 100px;
+    min-width: 120px;
     max-width: 200px;
     display: flex;
     flex-direction: column;
@@ -254,4 +156,109 @@ footer {
 #twitch {
     position: relative;
     top: 2px;
+}
+
+
+
+/*code for responsive web*/
+/*for portrait browser window*/
+@media (orientation: portrait) {
+    img.homelogo {
+        transition: background-color 150ms, width 150ms;
+        width: 60vw;
+        min-width: 300px;
+    }
+    img.homelogo:hover {
+        transition: background-color 150ms, width 150ms;
+        width: 60vw;
+    }
+    img.homelogo:active {
+        transition: background-color 150ms, width 150ms;
+        width: 55vw;
+        min-width: 275px;
+    }
+    
+    #twitter,
+    #mail,
+    #twitch {
+        width: 5vw;
+        min-width: 32px;
+    }
+}
+/*for landscape browser window*/
+@media (orientation: landscape) and (max-height: ) {
+    img.homelogo {
+        
+    }
+}
+
+/*for mobile display*/
+/*logo transition*/
+@media (orientation: portrait) and (max-width: 500px) {
+        img.homelogo {
+        width: 60vw;
+        min-width: 300px;
+    }
+    img.homelogo:hover {
+        width: 60vw;
+    }
+    img.homelogo:active {
+        width: 60vw;
+        min-width: 300px;
+    }
+}
+
+/*layout*/
+@media (min-width: 600px) and (max-width: 799px) {
+    div.homelogo {
+        width: 60vw;
+    }
+    
+    .nav_main {
+        column-gap: 5vw;
+    }
+    
+    .nav_link {
+        font-size: 1.2rem;
+        min-width: 110px;
+    }
+}
+
+@media (min-width: 480px) and (max-width: 599px) {
+    .nav_main {
+        column-gap: 3vw;
+    }
+}
+
+@media (min-width: 430px) and (max-width: 479px) {
+    .nav_main {
+        column-gap: 1vw;
+    }
+    
+    .nav_link {
+        font-size: 1.1rem;
+        min-width: 104px;
+    }
+}
+
+@media (max-width: 429px) {
+    .nav_main {
+        column-gap: 0.5vw;
+    }
+    .nav_link {
+        font-size: 0.9rem;
+        min-width: 82px;
+    }
+}
+
+
+/*for desktop browser*/
+@media (min-width: 800px) {
+    div.homelogo {
+        height: 20vh;
+    }
+    
+    .nav_main {
+        column-gap: 10vw;
+    }
 }
