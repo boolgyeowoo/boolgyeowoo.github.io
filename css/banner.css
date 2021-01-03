@@ -86,15 +86,23 @@ div.headercontent {
 }
 
 img.sitelogo {
+    transition: all 150ms;
     width: 20vw;
     padding: 10px;
     min-width: 100px;
     max-height: 75px;
 }
 
-img.sitelogo:hover {}
+img.sitelogo:hover {
+    transition: all 250ms;
+    background-color: rgba(0, 0, 0, 0.025);
+    width: 20vw;
+}
 
-img.sitelogo:active {}
+img.sitelogo:active {
+    transition: all 250ms;
+    width: 18vw;
+}
 
 ul.nav_main {
     display: flex;
@@ -112,8 +120,12 @@ ul.nav_mobl {
 }
 
 .submenu {
+    display: flex;
     background-color: #fafafa;
     margin: 0;
+    flex-direction: column;
+    text-align: justify;
+    column-count: 6;
 }
 
 /*헤더 끝 본문 시작*/
@@ -234,6 +246,10 @@ footer {
     
     div.maincontent {
         width: 80vw;
+    }
+    
+    .sampleimg {
+        width: 90vw
     }
 }
 
