@@ -34,7 +34,7 @@ ul {
     margin-top: auto;
     margin-bottom: auto;
     position: relative;
-    top: 22vh;
+    top: 25vh;
 }
 
 div.homelogo {
@@ -43,11 +43,6 @@ div.homelogo {
     justify-content: center;
     align-items: center;
     height: 27vh;
-}
-
-/*div; space between logo and name*/
-#room {
-    height: 28vh;
 }
 
 #name {
@@ -63,6 +58,7 @@ div.homelogo {
     font-weight: 200;
     font-size: 2rem;
     color: #fafafa;
+    margin: 0;
 }
 
 /*logo transition*/
@@ -70,7 +66,7 @@ img.homelogo {
     transition: background-color 150ms, width 150ms;
     padding: 2vh;
     width: 40vw;
-    min-width: 600px;
+    min-width: 300px;
     opacity: 1.0;
 }
 
@@ -186,16 +182,22 @@ footer {
     }
 }
 /*for landscape browser window*/
-@media (orientation: landscape) and (max-height: ) {
+@media (orientation: landscape) and (max-height: 600px) {
     img.homelogo {
-        
+        max-height: 200px;
+        min-width: 300px;
+        height: 30vh;
+    }
+    
+    #name {
+        font-size: 1.8rem;
     }
 }
 
 /*for mobile display*/
 /*logo transition*/
 @media (orientation: portrait) and (max-width: 500px) {
-        img.homelogo {
+    img.homelogo {
         width: 60vw;
         min-width: 300px;
     }
@@ -228,6 +230,10 @@ footer {
     .nav_main {
         column-gap: 3vw;
     }
+    
+    #name {
+        font-size: 1.8rem;
+    }
 }
 
 @media (min-width: 430px) and (max-width: 479px) {
@@ -239,6 +245,10 @@ footer {
         font-size: 1.1rem;
         min-width: 104px;
     }
+    
+    #name {
+        font-size: 1.6rem;
+    }
 }
 
 @media (max-width: 429px) {
@@ -248,6 +258,10 @@ footer {
     .nav_link {
         font-size: 0.9rem;
         min-width: 82px;
+    }
+    
+    #name {
+        font-size: 1.4rem;
     }
 }
 
