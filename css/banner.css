@@ -11,6 +11,7 @@ body {
     background-color: #fafafa;
     margin: 0;
     font-weight: 300;
+    font-size: 1rem;
 }
 
 a {
@@ -21,14 +22,19 @@ ul {
     list-style-type: none;
 }
 
-header.header, div.headercontent, footer, div.contentbox, .nav_link, div.maincontent {
+div.headercontent,
+footer,
+div.contentbox,
+.nav_link,
+div.maincontent,
+li.nav_list {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header.header {
-    padding: 10px 0;
+    padding-top: 5px;
     background-color: #d1d1d1;
 }
 
@@ -54,13 +60,13 @@ div.headercontent {
 .nav_link {
     transition: all 125ms;
     color: #111111;
-    border: rgba(0,0,0,0) solid 1px;
+    border: rgba(0, 0, 0, 0) solid 1px;
     box-sizing: border-box;
-    height: 4vh;
+    height: 6vh;
     width: 10vw;
     min-height: 40px;
-    max-height: 100px;
-    min-width: 100px;
+    max-height: 80px;
+    min-width: 120px;
     max-width: 200px;
     flex-direction: column;
     font-size: 1.25rem;
@@ -74,28 +80,29 @@ div.headercontent {
 
 .nav_link:active {
     transition: all 200ms;
-    color: #f0f0f0;
+    color: #fafafa;
     background-color: #111111;
     border: #111111 solid 1px;
 }
 
-img.sitelogo{
+img.sitelogo {
     width: 20vw;
     padding: 10px;
     min-width: 100px;
     max-height: 75px;
 }
 
+img.sitelogo:hover {}
+
+img.sitelogo:active {}
+
 ul.nav_main {
     display: flex;
     flex-direction: row;
-    height: 6vh;
     text-align: justify;
     column-count: 4;
     margin: 0px;
     padding: 0px;
-    min-height: 60px;
-    max-height: 120px;
     column-gap: 4vw;
     padding-left: 20px;
 }
@@ -104,11 +111,19 @@ ul.nav_mobl {
     display: none;
 }
 
+.submenu {
+    background-color: #fafafa;
+    margin: 0;
+}
+
+/*헤더 끝 본문 시작*/
+
 div.maincontent {
-    width: 75vw;
+    width: 66vw;
     max-width: 1440px;
     margin-top: 50px;
     flex-direction: column;
+    
 }
 
 
@@ -125,13 +140,17 @@ footer {
 }
 
 
-/*
 
+/*media queries for responsive web*/
 
-
-@media (orientation: portrait) or (max-width: 800px) {
+@media (orientation: portrait) , (max-width: 800px) {
     header.header {
         padding: 0;
+        background-color: rgba(0,0,0,0%);
+    }
+    
+    .headercontent {
+        background-color: #d1d1d1;
     }
     
     .menu_icon {
@@ -176,6 +195,7 @@ footer {
         z-index: 999;
         background-color: #fafafa;
         font-size: 1.125rem;
+        margin: 0;
     }
     
     a.nav_link_m {
@@ -211,6 +231,9 @@ footer {
         justify-content: center;
         align-items: center;
     }
+    
+    div.maincontent {
+        width: 80vw;
+    }
 }
 
-*/
