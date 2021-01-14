@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/banner.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="script/mobl_nav.js"></script>
+    <script type="textext/javascript" src="script/url.js"></script>
     <title>Test</title>
 </head>
 
@@ -19,7 +20,12 @@
                     <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
                 </span>
                 <ul class="nav_main">
-                    <li><a class="nav_link" href="about.html">about</a></li>
+                    <li><a class="nav_link"  onclick="
+      fetch('about').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('.maincontent').innerHTML = text;
+        })
+      });">about</a></li>
                     <li><a class="nav_link" href="featured.html">featured</a></li>
                     <li><a class="nav_link" href="session.html">sessions</a></li>
                     <li><a class="nav_link" href="commission.html">commission</a></li>
@@ -40,13 +46,6 @@
                 <li class="sub_link"><a href="*">Seoul Forest</a></li>
                 <li class="sub_link"><a href="*">Suwon Hwaseong</a></li>
                 <li class="sub_link"><a href="*">Ddukseom Hangang riv. Park</a></li>
-                    <li><a onclick="
-      fetch('about').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('.maincontent').innerHTML = text;
-        })
-      });
-    ">about</a></li>
             </ul>
         </div>
     </header>
