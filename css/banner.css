@@ -22,6 +22,7 @@ ul {
     list-style-type: none;
 }
 
+div.mainheader,
 div.headercontent,
 footer,
 div.contentbox,
@@ -140,7 +141,8 @@ div.maincontent {
 
 
 .sampleimg {
-    width: 500px;
+    width: 40vw;
+    min-width: 500px;
     padding: 20px;
 }
 
@@ -249,7 +251,8 @@ footer {
     }
     
     .sampleimg {
-        width: 90vw
+        width: 90vw;
+        min-width: 250px;
     }
 }
 

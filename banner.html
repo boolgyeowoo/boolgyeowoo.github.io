@@ -5,31 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=yes, width=device-width">
     <link rel="stylesheet" href="css/banner.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="script/mobl_nav.js"></script>
     <title>Test</title>
 </head>
 
 <body>
     <header class="header">
-        <div class="headercontent">
-            <div><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt=""></a></div>
-            <span class="menu_icon">
-                <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
-            </span>
-            <ul class="nav_main">
-                <li><a class="nav_link" href="about.html">about</a></li>
-                <li><a class="nav_link" href="featured.html">featured</a></li>
-                <li><a class="nav_link" href="session.html">sessions</a></li>
-                <li><a class="nav_link" href="commission.html">commission</a></li>
+        <div class="mainheader">
+            <div class="headercontent">
+                <div><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt=""></a></div>
+                <span class="menu_icon">
+                    <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
+                </span>
+                <ul class="nav_main">
+                    <li><a class="nav_link" href="about.html">about</a></li>
+                    <li><a class="nav_link" href="featured.html">featured</a></li>
+                    <li><a class="nav_link" href="session.html">sessions</a></li>
+                    <li><a class="nav_link" href="commission.html">commission</a></li>
+                </ul>
+            </div>
+            <ul class="nav_mobl">
+                <li class="nav_link_m"><a class="nav_link_m" href="about.html">about</a></li>
+                <li class="nav_link_m"><a class="nav_link_m selected" href="featured.html">featured</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="session.html">sessions</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="commision.html">commision</a></li>
             </ul>
         </div>
-        <ul class="nav_mobl">
-            <li class="nav_link_m"><a class="nav_link_m" href="about.html">about</a></li>
-            <li class="nav_link_m"><a class="nav_link_m selected" href="featured.html">featured</a></li>
-            <li class="nav_link_m"><a class="nav_link_m" href="session.html">sessions</a></li>
-            <li class="nav_link_m"><a class="nav_link_m" href="commision.html">commision</a></li>
-        </ul>
         <div class="submenu">
             <ul>
                 <li class="sub_link"><a href="*">List of sessions</a></li>
@@ -38,6 +40,13 @@
                 <li class="sub_link"><a href="*">Seoul Forest</a></li>
                 <li class="sub_link"><a href="*">Suwon Hwaseong</a></li>
                 <li class="sub_link"><a href="*">Ddukseom Hangang riv. Park</a></li>
+                    <li><a onclick="
+      fetch('about').then(function(response){
+        response.text().then(function(text){
+          document.querySelector('.maincontent').innerHTML = text;
+        })
+      });
+    ">about</a></li>
             </ul>
         </div>
     </header>
