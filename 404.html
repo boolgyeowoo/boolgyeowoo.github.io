@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0,
 minimum-scale=1.0, width=device-width">
+<!--
     <link rel="stylesheet" type="text/css" href="https://boolgyeowoo.github.io/css/style.css">
     <link rel="stylesheet" type="text/css" href="https://boolgyeowoo.github.io/css/404.css">
-<!--
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/404.css">
 -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/404.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script/mobl_nav.js"></script>
     <title>404 - boolgyeowoo photo</title>
@@ -19,42 +19,40 @@ minimum-scale=1.0, width=device-width">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-           <div class="mob_header">
-            <span id="logo_img">
-                <a class="sitelogo" href="index.html">
-                    <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black" title="Home">
-                </a>
-            </span>
-            <span class="menu_icon">
-                <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
-            </span>
-           </div>
-            
-            <ul lang="en" class="nav_mobl">
+    <header class="header">
+        <div class="mainheader">
+            <div class="headercontent">
+                <div><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt=""></a></div>
+                <span class="menu_icon">
+                    <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
+                </span>
+                <ul class="nav_main">
+                    <li><a class="nav_link" href="about.html">about</a></li>
+                    <li><a class="nav_link" href="featured.html">featured</a></li>
+                    <li><a class="nav_link" href="session.html">sessions</a></li>
+                    <li><a class="nav_link" href="commission.html">commission</a></li>
+                </ul>
+            </div>
+            <ul class="nav_mobl">
                 <li class="nav_link_m"><a class="nav_link_m" href="about.html">about</a></li>
-                <li class="nav_link_m"><a class="nav_link_m" href="featured.html">featured</a></li>
+                <li class="nav_link_m"><a class="nav_link_m selected" href="featured.html">featured</a></li>
                 <li class="nav_link_m"><a class="nav_link_m" href="session.html">sessions</a></li>
-                <li class="nav_link_m"><a class="nav_link_m" href="all.html">all photo</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="commision.html">commision</a></li>
             </ul>
-            <ul lang="en" class="nav_main">
-                <li><a class="nav_link" href="about.html">about</a></li>
-                <li><a class="nav_link" href="featured.html">featured</a></li>
-                <li><a class="nav_link" href="session.html">sessions</a></li>
-                <li><a class="nav_link" href="all.html">all photo</a></li>
-            </ul>
-        </header>
-        <section id="main">
+        </div>
+    </header>
+    <div class="contentbox">
+        <!--       main contents will be placed in here     -->
+        <div class="maincontent">
             <h1>Error:404 Not Found</h1>
             <p class="p_content">존재하지 않는 페이지 입니다.</p>
             <p class="p_content">아직 개발되지 않았거나 업데이트되지 않았을 수 있으니 조금만 기다려 주세요!</p>
             <p lang="en">This Page is not available yet.</p>
             <a class="backlink" href="javascript:history.back()">이전페이지로 돌아가기</a>
-        </section>
+        </div>
     </div>
-    <footer class="footer">
-        <p>Copyright 2020. boolgyeowoo All rights reserved.</p>
+    <footer lang="en" class="footer">
+        <div>Copyright 2020. boolgyeowoo All rights reserved.</div>
     </footer>
 </body>
 

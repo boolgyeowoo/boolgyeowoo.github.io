@@ -15,34 +15,31 @@ minimum-scale=1.0, width=device-width">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="mob_header">
-                <span id="logo_img">
-                    <!--logo image-->
-                    <a class="sitelogo" href="index.html">
-                        <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black" title="Home">
-                    </a>
-                </span>
+    <header class="header">
+        <div class="mainheader">
+            <div class="headercontent">
+                <div><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt=""></a></div>
                 <span class="menu_icon">
                     <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
                 </span>
+                <ul class="nav_main">
+                    <li><a class="nav_link" href="about.html">about</a></li>
+                    <li><a class="nav_link" href="featured.html">featured</a></li>
+                    <li><a class="nav_link" href="session.html">sessions</a></li>
+                    <li><a class="nav_link" href="commission.html">commission</a></li>
+                </ul>
             </div>
-
-            <ul lang="en" class="nav_mobl">
-                <li class="nav_link_m"><a class="nav_link_m selected" href="about.html">about</a></li>
-                <li class="nav_link_m"><a class="nav_link_m" href="featured.html">featured</a></li>
+            <ul class="nav_mobl">
+                <li class="nav_link_m"><a class="nav_link_m" href="about.html">about</a></li>
+                <li class="nav_link_m"><a class="nav_link_m selected" href="featured.html">featured</a></li>
                 <li class="nav_link_m"><a class="nav_link_m" href="session.html">sessions</a></li>
-                <li class="nav_link_m"><a class="nav_link_m" href="all.html">all photo</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="commision.html">commision</a></li>
             </ul>
-            <ul lang="en" class="nav_main">
-                <li><a class="nav_link selected" href="about.html">about</a></li>
-                <li><a class="nav_link" href="featured.html">featured</a></li>
-                <li><a class="nav_link" href="session.html">sessions</a></li>
-                <li><a class="nav_link" href="all.html">all photo</a></li>
-            </ul>
-        </header>
-        <section id="main">
+        </div>
+    </header>
+    <div class="contentbox">
+        <!--       main contents will be placed in here     -->
+        <div class="maincontent">
             <h1>about</h1>
             <img src="img/BYW_logo_BK_c.svg" alt="boolgyeowoo logo black">
             <p>안녕하세요 사진사 붉여우 입니다.</p>
@@ -68,7 +65,7 @@ minimum-scale=1.0, width=device-width">
                 <li>모델의 경우</li>
                 <li>제 3자의 경우</li>
             </ul>
-        </section>
+        </div>
     </div>
     <footer lang="en" class="footer">
         <p>Copyright 2020. boolgyeowoo All rights reserved.</p>

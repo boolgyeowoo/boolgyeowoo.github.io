@@ -15,36 +15,33 @@ minimum-scale=1.0, width=device-width">
 </head>
 
 <body>
-    <div class="container">
-        <header class="header">
-            <div class="mob_header">
-                <span id="logo_img">
-                    <!--logo image-->
-                    <a class="sitelogo" href="index.html">
-                        <img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt="sites main logo black" title="Home">
-                    </a>
-                </span>
+    <header class="header">
+        <div class="mainheader">
+            <div class="headercontent">
+                <div><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt=""></a></div>
                 <span class="menu_icon">
                     <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
                 </span>
+                <ul class="nav_main">
+                    <li><a class="nav_link" href="about.html">about</a></li>
+                    <li><a class="nav_link" href="featured.html">featured</a></li>
+                    <li><a class="nav_link" href="session.html">sessions</a></li>
+                    <li><a class="nav_link" href="commission.html">commission</a></li>
+                </ul>
             </div>
-
-            <ul lang="en" class="nav_mobl">
+            <ul class="nav_mobl">
                 <li class="nav_link_m"><a class="nav_link_m" href="about.html">about</a></li>
                 <li class="nav_link_m"><a class="nav_link_m selected" href="featured.html">featured</a></li>
                 <li class="nav_link_m"><a class="nav_link_m" href="session.html">sessions</a></li>
-                <li class="nav_link_m"><a class="nav_link_m" href="all.html">all photo</a></li>
+                <li class="nav_link_m"><a class="nav_link_m" href="commision.html">commision</a></li>
             </ul>
-            <ul lang="en" class="nav_main">
-                <li><a class="nav_link" href="about.html">about</a></li>
-                <li><a class="nav_link selected" href="featured.html">featured</a></li>
-                <li><a class="nav_link" href="session.html">sessions</a></li>
-                <li><a class="nav_link" href="all.html">all photo</a></li>
-            </ul>
-        </header>
-        <section id="main">
-            <h1 class="title">featured</h1>
-            <p>여기에 사진을 배치</p>
+        </div>
+    </header>
+    <div class="contentbox">
+        <!--       main contents will be placed in here     -->
+        <div class="maincontent">
+            <h1 class="title">Featured Images</h1>
+            <p></p>
             <div class="contents">
                 <div><img src="img/featured/featured_1.jpg" alt="" class="featured_img vert"></div>
                 <div><img src="img/featured/featured_2.jpg" alt="" class="featured_img horz"></div>
@@ -71,7 +68,7 @@ minimum-scale=1.0, width=device-width">
                 <div><img src="img/featured/featured_23.jpg" alt="" class="featured_img horz"></div>
                 <div><img src="img/featured/featured_24.jpg" alt="" class="featured_img vert"></div>
             </div>
-        </section>
+        </div>
     </div>
     <footer lang="en" class="footer">
         <p>Copyright 2020. boolgyeowoo All rights reserved.</p>
