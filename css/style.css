@@ -102,7 +102,7 @@ img.sitelogo:hover {
 
 img.sitelogo:active {
     transition: all 250ms;
-    width: 18vw;
+    width: 20vw;
 }
 
 ul.nav_main {
