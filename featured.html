@@ -77,11 +77,12 @@ minimum-scale=1.0, width=device-width">
 //        $('.wall').jaliswall({item:'.wall-item'});
         var wallfun = () => $('.wall').jaliswall({item:'.wall-item'})
         var globalResizeTimer = null;
-        wallfun();
-        
-        $(window).resize(function() {
-            if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
-            globalResizeTimer = window.setTimeout(() => wallfun(), 200);
+        $(document).ready(function() {
+            $(window).resize(function() {
+                if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+                globalResizeTimer = window.setTimeout(() => wallfun(), 200);
+            });
+            wallfun();
         });
     </script>
 </body>

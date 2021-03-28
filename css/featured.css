@@ -6,27 +6,13 @@ h1.title {
 .wall-item {
     display: block;
     background: none;
-/*
-    margin: 0 0 30px 0;
-    padding: 12px;
-    border-radius: 3px;
-    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-    transition: all 220ms;
-*/
     margin: 0;
     padding: 0;
 }
 
-/*.wall-item:hover {
-  box-shadow: 0px 2px 3px 1px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px);
-  transition: all 220ms;
-}*/
-
 .wall-item > img {
     display: block;
     width: 100%;
-    /*    margin: 0 0 24px 0;*/
     margin: 24px 0;
 }
 
@@ -38,17 +24,22 @@ h1.title {
     display: none;
 }
 
+.featured_main {
+/*    text-align: center;*/
+}
+
 .wall {
     display: block;
     position: relative;
     margin: 0 12px 0 12px;
+    max-width: 1536px;
 }
 
 .wall-column {
     display: block;
     position: relative;
     width: 33.333333%;
-    max-width: 480px;
+    /*    max-width: 480px;*/
     float: left;
     padding: 0 12px;
     box-sizing: border-box;
@@ -59,12 +50,19 @@ h1.title {
     .wall-column {
         width: 50%;
     }
+
+    .wall {
+        max-width: 1032px;
+    }
 }
 
 @media (max-width: 800px) {
     .wall-column {
         width: auto;
         float: none;
-        max-width: 600px;
+    }
+
+    .wall {
+        max-width: 528px;
     }
 }

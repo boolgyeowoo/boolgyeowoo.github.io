@@ -5,7 +5,9 @@
 
 
 div.session_nav {
-    width: 50vw;
+    width: 80vw;
+    max-width: 600px;
+    min-width: 300px;
 }
 
 ul {
@@ -15,13 +17,11 @@ ul {
 li.ses_link {
     box-sizing: border-box;
     width: 100%;
-    height: 120px;
+    height: 150px;
     margin: 24px 0 24px 0;
 
     /*    background    */
-/*    background-color: rgba(0, 0, 0, 0.05);*/
-    background-image: url(../img/sample_img.jpg), linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0));
-    background-blend-mode: overlay;
+    background-blend-mode: multiply;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -38,17 +38,41 @@ li.ses_link > a {
 
 .session_ds {
     color: #fff;
-    
 }
+
 
 .session_tt {
     font-size: 2.6rem;
     font-family: LeagueGothic-Regular;
-/*    text-shadow: -1px 1px 0 rgba(0,0,0,0.4), 1px 1px 0 rgba(0,0,0,0.4), 1px -1px 0 rgba(0,0,0,0.4), -1px -1px 0 rgba(0,0,0,0.4);*/
+    /*
+    background-image: linear-gradient(to left, #F0F, #00F, #0FF, #0F0, #FF0, #F00);
+    -webkit-background-clip: text;
+    color: transparent;
+*/
+    /*    text-shadow: -1px 1px 0 rgba(0,0,0,0.4), 1px 1px 0 rgba(0,0,0,0.4), 1px -1px 0 rgba(0,0,0,0.4), -1px -1px 0 rgba(0,0,0,0.4);*/
 }
 
 .session_dt {
     font-size: 1.5rem;
     font-weight: 300;
-/*    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;*/
+}
+
+#SNMK {
+    /*    background-image: url(*);*/
+}
+
+#CSMK {}
+
+#MK {}
+
+#SHP {}
+
+#SF {}
+
+#LFFF {
+    background-image: url(../img/session/LFFF.jpg), linear-gradient(to right, #000, #fff);
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
