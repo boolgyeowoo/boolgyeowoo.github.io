@@ -1,11 +1,20 @@
+h1.title {
+    margin: 48px 0 24px 0;
+}
+
+
 .wall-item {
     display: block;
-    margin: 0 0 30px 0;
-    padding: 12px;
-    background: white;
+    /*    margin: 0 0 30px 0;*/
+    /*    padding: 12px;*/
+    background: none;
+    /*
     border-radius: 3px;
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
     transition: all 220ms;
+*/
+    margin: 0;
+    padding: 0;
 }
 
 /*.wall-item:hover {
@@ -17,7 +26,8 @@
 .wall-item > img {
     display: block;
     width: 100%;
-    margin: 0 0 24px 0;
+    /*    margin: 0 0 24px 0;*/
+    margin: 24px 0;
 }
 
 .wall-item h2 {
@@ -25,44 +35,50 @@
     font-size: 14px;
     text-transform: uppercase;
     margin: 0 0 12px 0;
-
+    display: none;
 }
 
 .wall {
     display: block;
     position: relative;
+    margin: 0 3vw;
 }
 
 .wall-column {
     display: block;
     position: relative;
     width: 33.333333%;
+    max-width: 480px;
     float: left;
-    padding: 0 10px;
+    padding: 0 12px;
     box-sizing: border-box;
 }
 
-@media (min-width: 1441px) {
+/*
+@media (min-width: 1501px) {
     div.featured_main {
-        width: 80vw;
+        width: 70vw;
     }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1500px) {
     div.featured_main {
         width: 95vw
     }
 }
+*/
 
-@media (max-width: 900px) {
+
+@media (max-width: 1200px) {
     .wall-column {
         width: 50%;
     }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
     .wall-column {
         width: auto;
         float: none;
+        max-width: 600px;
     }
 }

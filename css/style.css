@@ -168,7 +168,7 @@ p {
 }
 
 footer {
-    position: relevant;
+    position: relative;
     width: 100%;
     left: 0;
     bottom: 0px;
