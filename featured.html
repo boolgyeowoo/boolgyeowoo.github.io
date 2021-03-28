@@ -16,7 +16,7 @@ minimum-scale=1.0, width=device-width">
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="mainheader">
             <div class="headercontent">
                 <div><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg"></a></div>
@@ -34,14 +34,14 @@ minimum-scale=1.0, width=device-width">
                 <li><a class="nav_link_m" href="about.html">about</a></li>
                 <li><a class="nav_link_m selected" href="featured.html">featured</a></li>
                 <li><a class="nav_link_m" href="session.html">sessions</a></li>
-                <li><a class="nav_link_m" href="commision.html">commision</a></li>
+                <li><a class="nav_link_m" href="commission.html">commision</a></li>
             </ul>
         </div>
     </header>
     <div class="contentbox">
         <!--       main contents will be placed in here     -->
         <div class="featured_main">
-            <h1 class="title" style="text-align:center";>Featured Images</h1>
+            <h1 class="title">Featured Images</h1>
             <p></p>
             <div class="wall">
                 <div class="wall-item"><img src="img/featured/featured_1.jpg"><h2>펜릴이는 펜릴펜릴해오</h2></div>
@@ -71,11 +71,19 @@ minimum-scale=1.0, width=device-width">
             </div>
         </div>
     </div>
-    <footer lang="en" class="footer">
-        <p>Copyright 2020. boolgyeowoo All rights reserved.</p>
+    <footer class="footer">
+        <p>Copyright 2021. boolgyeowoo All rights reserved.</p>
     </footer>
     <script>
-        $('.wall').jaliswall({item:'.wall-item'});
+//        $('.wall').jaliswall({item:'.wall-item'});
+        var wallfun = () => $('.wall').jaliswall({item:'.wall-item'})
+        var globalResizeTimer = null;
+        wallfun();
+        
+        $(window).resize(function() {
+            if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+            globalResizeTimer = window.setTimeout(() => wallfun(), 200);
+        });
     </script>
 </body>
 
