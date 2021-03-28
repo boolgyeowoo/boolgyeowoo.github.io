@@ -41,7 +41,7 @@ h1.title {
 .wall {
     display: block;
     position: relative;
-    margin: 0 3vw;
+    margin: 0 12px 0 12px;
 }
 
 .wall-column {
