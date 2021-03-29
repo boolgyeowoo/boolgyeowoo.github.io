@@ -49,30 +49,9 @@ li.ses_link > a {
     -webkit-background-clip: text;
     color: transparent;
 */
-    /*    text-shadow: -1px 1px 0 rgba(0,0,0,0.4), 1px 1px 0 rgba(0,0,0,0.4), 1px -1px 0 rgba(0,0,0,0.4), -1px -1px 0 rgba(0,0,0,0.4);*/
 }
 
 .session_dt {
     font-size: 1.5rem;
     font-weight: 300;
-}
-
-#SNMK {
-    /*    background-image: url(*);*/
-}
-
-#CSMK {}
-
-#MK {}
-
-#SHP {}
-
-#SF {}
-
-#LFFF {
-    background-image: url(../img/session/LFFF.jpg), linear-gradient(to right, #000, #fff);
-    background-blend-mode: multiply;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
 }

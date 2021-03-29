@@ -132,15 +132,6 @@ ul.nav_mobl {
     display: none;
 }
 
-.submenu {
-    display: flex;
-    background-color: #fafafa;
-    margin: 0;
-    flex-direction: column;
-    text-align: justify;
-    column-count: 6;
-}
-
 /*헤더 끝 본문 시작*/
 
 
