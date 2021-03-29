@@ -1,0 +1,50 @@
+{
+  "snmk": {
+    "image": "SNMK.jpg",
+    "grad_start": "#707070",
+    "grad_end": "#FFF",
+    "full_name": "SINI&amp;MIKO",
+    "date": "2021&ndash;02",
+    "href": "session/snmk.html"
+  },
+  "csmk": {
+    "image": "CSMK.jpg",
+    "grad_start": "#888",
+    "grad_end": "#FFF",
+    "full_name": "CAESAR&amp;MIKO",
+    "date": "2021&ndash;01",
+    "href": "session/csmk.html"
+  },
+  "mk": {
+    "image": "MK.jpg",
+    "grad_start": "#888",
+    "grad_end": "#FFF",
+    "full_name": "MIKO",
+    "date": "2020&ndash;11",
+    "href": "session/mk.html"
+  },
+  "shp": {
+    "image": "SHP.jpg",
+    "grad_start": "#888",
+    "grad_end": "#FFF",
+    "full_name": "Suwon Hwaseong",
+    "date": "2020&ndash;05",
+    "href": "session/shp.html"
+  },
+  "sf": {
+    "image": "SF.jpg",
+    "grad_start": "#888",
+    "grad_end": "#FFF",
+    "full_name": "Seoul Forest",
+    "date": "2020&ndash;03",
+    "href": "session/sf.html"
+  },
+  "lfff": {
+    "image": "LFFF.jpg",
+    "grad_start": "#505050",
+    "grad_end": "#D1D1D1",
+    "full_name": "LastFur&amp;FirstFur",
+    "date": "2020&ndash;01",
+    "href": "session/lfff.html"
+  }
+}
