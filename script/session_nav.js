@@ -13,10 +13,15 @@ function loadJSON(jsonPath, isAsync, callback) {
     xobj.send(null);  
 }
 
-function init() {
-    // DB 로드
+function init_main() {
     loadJSON("script/sessions.json", true, response => {
         populateSessionBars(JSON.parse(response));
+    });
+}
+
+function init_subpage() {
+    loadJSON("../script/sessions.json", true, response => {
+        populateSessionNav(JSON.parse(response));
     });
 }
 
@@ -30,4 +35,18 @@ function populateSessionBars(db) {
     output += "</ul>"
     
     document.getElementById("sesson_nav_root").innerHTML = output;
+}
+
+function populateSessionNav(db) {
+    let currentPage = "session/"+location.href.split("/").slice(-1);
+    let output = '<ul class="sub_menu"><li><a href="../session.html" class="sub_link">session list</a></li>';
+    
+    Object.keys(db).forEach(id =>
+        {
+            let css_class = (currentPage == db[id].href) ? "sub_link selected" : "sub_link";
+            output += `<li><a href="../${currentPage}" class="${css_class}">${db[id].full_name}</a></li>`;
+        }
+    );
+    
+    document.getElementById("sesson_nav_subpage").innerHTML = output;
 }

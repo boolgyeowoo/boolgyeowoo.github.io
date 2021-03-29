@@ -3,7 +3,7 @@
     "image": "SNMK.jpg",
     "grad_start": "#707070",
     "grad_end": "#FFF",
-    "full_name": "SINI&amp;MIKO",
+    "full_name": "SINI &amp; MIKO",
     "date": "2021&ndash;02",
     "href": "session/snmk.html"
   },
@@ -11,7 +11,7 @@
     "image": "CSMK.jpg",
     "grad_start": "#888",
     "grad_end": "#FFF",
-    "full_name": "CAESAR&amp;MIKO",
+    "full_name": "CAESAR &amp; MIKO",
     "date": "2021&ndash;01",
     "href": "session/csmk.html"
   },
@@ -43,7 +43,7 @@
     "image": "LFFF.jpg",
     "grad_start": "#505050",
     "grad_end": "#D1D1D1",
-    "full_name": "LastFur&amp;FirstFur",
+    "full_name": "LastFur &amp; FirstFur",
     "date": "2020&ndash;01",
     "href": "session/lfff.html"
   }
