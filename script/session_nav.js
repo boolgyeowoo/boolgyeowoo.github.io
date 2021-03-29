@@ -44,7 +44,7 @@ function populateSessionNav(db) {
     Object.keys(db).forEach(id =>
         {
             let css_class = (currentPage == db[id].href) ? "sub_link selected" : "sub_link";
-            output += `<li><a href="../${currentPage}" class="${css_class}">${db[id].full_name}</a></li>`;
+            output += `<li><a href="../${db[id].href}" class="${css_class}">${db[id].full_name}</a></li>`;
         }
     );
     
