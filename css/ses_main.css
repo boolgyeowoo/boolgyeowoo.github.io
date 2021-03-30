@@ -3,6 +3,12 @@
     src: url("../font/LeagueGothic-1.601/static/WOFF2/LeagueGothic-Regular.woff2") format('woff2');
 }
 
+h1.title {
+    font-size: 2.5rem;
+    font-weight: 300;
+    
+}
+
 
 div.session_nav {
     width: 80vw;
