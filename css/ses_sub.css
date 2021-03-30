@@ -3,6 +3,8 @@
     white-space: nowrap;
     margin: 0 auto;
     padding: 0 3vw;
+    scrollbar-color: #d1d1d1 #f0f0f0;
+    scrollbar-width: thin;
 }
 
 .sub_content::-webkit-scrollbar {
@@ -55,6 +57,13 @@
 .selected {
     border-bottom: 1px solid #111111;
 }
+
+div.maincontent {
+    width: 100vw;
+    margin: 0;
+    max-width: none;
+}
+
 
 @media (max-width: 1000px) {
     .sub_content {

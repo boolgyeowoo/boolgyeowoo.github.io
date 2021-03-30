@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="user-scalable=yes, width=device-width">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/featured.css">
     <link rel="stylesheet" href="../css/ses_sub.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../script/mobl_nav.js"></script>
     <script type="text/javascript" src="../script/session_nav.js"></script>
+    <script type="text/javascript" src="../script/jaliswall.js"></script>
     <title>SINI &amp; MIKO - boolgyeowoo photo</title>
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     <link rel="icon" href="../favicon.png" type="image/png">
@@ -44,12 +46,49 @@
     <div class="contentbox">
 <!--       main contents will be placed in here     -->
         <div class="maincontent">
-            <p>퍼슈트 귀여워</p>
+            <h1>SINI &amp; MIKO</h1>
+            <div class="wall">
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_1.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_2.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_3.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_4.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_5.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_6.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_7.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_8.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_9.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_10.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_11.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_12.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_13.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_14.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_15.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_16.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_17.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_18.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_19.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_20.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_21.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_22.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_23.jpg"></div>
+                <div class="wall-item"><img src="../img/session/SNMK/SNMK_24.jpg"></div>
+            </div>
         </div>
     </div>
     <footer>
         <div>Copyright 2021. boolgyeowoo All rights reserved.</div>
     </footer>
+    <script>
+        var wallfun = () => $('.wall').jaliswall({item:'.wall-item'})
+        var globalResizeTimer = null;
+        $(document).ready(function() {
+            $(window).resize(function() {
+                if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+                globalResizeTimer = window.setTimeout(() => wallfun(), 200);
+            });
+            wallfun();
+        });
+    </script>
 </body>
 
 </html>
