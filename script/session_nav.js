@@ -39,7 +39,7 @@ function populateSessionBars(db) {
 
 function populateSessionNav(db) {
     let currentPage = "session/"+location.href.split("/").slice(-1);
-    let output = '<ul class="sub_menu"><li><a href="../session.html" class="sub_link">session list</a></li>';
+    let output = '<div class="sub_content"><ul class="sub_menu"><li><a href="../session.html" class="sub_link">session list</a></li>';
     
     Object.keys(db).forEach(id =>
         {
@@ -47,6 +47,8 @@ function populateSessionNav(db) {
             output += `<li><a href="../${db[id].href}" class="${css_class}">${db[id].full_name}</a></li>`;
         }
     );
+    
+    output += "</ul></div>"
     
     document.getElementById("sesson_nav_subpage").innerHTML = output;
 }
