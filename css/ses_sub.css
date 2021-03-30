@@ -10,14 +10,15 @@
 }
 
 .sub_content::-webkit-scrollbar-thumb {
-    background-color: #7f7f7f;
+    background-color: #a1a1a1;
     border-radius: 10px;
-    border: 1px solid transparent;
 }
 
 .sub_content::-webkit-scrollbar-track {
     background-color: #d1d1d1;
     border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
 }
 
 
