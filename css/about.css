@@ -3,14 +3,13 @@
 }
 
 .chiv_studio {
-    padding: 1vh 1vw;
-/*    margin: 1vw;*/
     background-color: #fff;
     box-sizing: content-box;
-    height: 14vh;
     display: inline-block;
+    padding: 5px;
 }
 
 .maincontent {
     width: 50vw;
+    max-width: 1536px;
 }

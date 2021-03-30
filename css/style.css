@@ -137,8 +137,6 @@ ul.nav_mobl {
 
 
 div.maincontent {
-    width: 66vw;
-    max-width: 1440px;
     margin-top: 50px;
     margin-bottom: 50px;
     flex-direction: column;
@@ -263,10 +261,6 @@ footer {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-    
-    div.maincontent {
-        width: 80vw;
     }
     
     p {
