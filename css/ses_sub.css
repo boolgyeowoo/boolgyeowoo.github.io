@@ -5,6 +5,24 @@
     padding: 0 3vw;
 }
 
+.sub_content::-webkit-scrollbar {
+    height: 10px;
+}
+
+.sub_content::-webkit-scrollbar-thumb {
+    background-color: #7f7f7f;
+    border-radius: 10px;
+    border: 1px solid transparent;
+}
+
+.sub_content::-webkit-scrollbar-track {
+    background-color: #d1d1d1;
+    border-radius: 10px;
+}
+
+
+
+
 .sub_menu {
     display: flex;
     flex-direction: row;
