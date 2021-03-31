@@ -26,3 +26,7 @@ p:lang(en) {
     background-color: #111111;
     color: #fafafa;
 }
+
+footer {
+    top: 48px;
+}
