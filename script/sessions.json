@@ -38,7 +38,8 @@
     "grad_end": "#FFF",
     "full_name": "Seoul Forest",
     "date": "2020&ndash;03",
-    "href": "session/sf1.html"
+    "href": "session/sf1.html",
+    "href2": "session/sf2.html"
   },
   "lfff": {
     "image": "LFFF.jpg",
@@ -46,6 +47,7 @@
     "grad_end": "#D1D1D1",
     "full_name": "LastFur &amp; FirstFur",
     "date": "2020&ndash;01",
-    "href": "session/lfff.html"
+    "href": "session/lfff1.html",
+    "href2": "session/lfff2.html"
   }
 }

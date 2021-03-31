@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="user-scalable=yes, width=device-width">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/featured.css">
+    <link rel="stylesheet" href="../css/ses_sub.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../script/mobl_nav.js"></script>
+    <script type="text/javascript" src="../script/session_nav.js"></script>
+    <script type="text/javascript" src="../script/jaliswall.js"></script>
+    <title>LastFur &#45; boolgyeowoo photo</title>
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="../favicon.png" type="image/png">
+</head>
+
+<body onload="init_subpage(), $('.wall').jaliswall({item:'.wall-item'});">
+    <header class="header">
+        <div class="mainheader">
+            <div class="headercontent">
+                <div><a href="../index.html"><img class="sitelogo" src="../img/BYW_logo_BK_c.svg" alt=""></a></div>
+                <span class="menu_icon">
+                    <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
+                </span>
+                <ul class="nav_main">
+                    <li><a class="nav_link" href="../about.html">about</a></li>
+                    <li><a class="nav_link" href="../featured.html">featured</a></li>
+                    <li><a class="nav_link" href="../session.html">sessions</a></li>
+                    <li><a class="nav_link" href="../contact.html">contact</a></li>
+                </ul>
+            </div>
+            <ul class="nav_mobl">
+                <li><a class="nav_link_m" href="../about.html">about</a></li>
+                <li><a class="nav_link_m" href="../featured.html">featured</a></li>
+                <li><a class="nav_link_m" href="../session.html">sessions</a></li>
+                <li><a class="nav_link_m" href="../contact.html">contact</a></li>
+            </ul>
+        </div>
+    </header>
+    <div id="sesson_nav_subpage">
+        <!-- TO BE FILLED BY THE COMPUTER LORD -->
+    </div>
+    <div class="contentbox">
+<!--       main contents will be placed in here     -->
+        <div class="maincontent">
+            <h1 class="title">LastFur &amp; FirstFur</h1>
+            <h3 class="date">LastFur</h3>
+            <div class="wall">
+                <div class="wall-item"><img src="../img/session/LFFF/LF_1.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_2.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_3.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_4.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_5.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_6.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_7.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_8.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_9.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_10.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_11.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_12.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_13.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_14.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_15.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_16.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_17.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_18.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_19.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_20.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_21.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_22.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_23.jpg"></div>
+                <div class="wall-item"><img src="../img/session/LFFF/LF_24.jpg"></div>
+            </div>
+            <a class="more_img" href="lfff2.html">FirstFur &gt;</a>
+        </div>
+    </div>
+    <footer>
+        <div>Copyright 2021. boolgyeowoo All rights reserved.</div>
+    </footer>
+    <script>
+        var wallfun = () => $('.wall').jaliswall({item:'.wall-item'})
+        var globalResizeTimer = null;
+        $(document).ready(function() {
+            $(window).resize(function() {
+                if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
+                globalResizeTimer = window.setTimeout(() => wallfun(), 200);
+            });
+            wallfun();
+        });
+    </script>
+</body>
+
+</html>
