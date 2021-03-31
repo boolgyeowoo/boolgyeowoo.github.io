@@ -14,7 +14,7 @@ Fursuit Photography Portfolio Website by boolgyeowoo
 
 # Copyright
 * For Codes
-    + .
+    + update soon
 
 * For Images   
     + Copyright 2020. boolgyeowoo All rights reserved.   
