@@ -63,9 +63,16 @@ div.maincontent {
 
 h1.title {
     font-size: 2.5rem;
-    margin: 48px 0;
+    margin: 48px 0 18px 0;
 }
 
+h3.date {
+    font-weight: 300;
+    color: #d1d1d1;
+    margin-top: 0;
+    margin-bottom: 48px;
+    font-size: 1.2rem;
+}
 
 @media (max-width: 1000px) {
     .sub_content {
@@ -79,5 +86,13 @@ h1.title {
     .sub_link {
         font-size: 0.9rem;
         height: 20px;
+    }
+    
+    h1.title {
+        font-size: 2rem;
+    }
+    
+    h3.date {
+        font-size: 0.9rem;
     }
 }
