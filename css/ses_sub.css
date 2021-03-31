@@ -74,6 +74,26 @@ h3.date {
     font-size: 1.2rem;
 }
 
+a.more_img {
+    display: inline;
+    color: #111111;
+    text-align: center;
+    font-size: 1.75rem;
+    margin: 64px 0;
+    padding: 10px;
+    position: relative;
+    border: #111111 solid 1px;
+    transition: all 250ms;
+    width: 15vw;
+    min-width: 150px;
+}
+
+a.more_img:hover {
+    transition: all 250ms;
+    background-color: #111111;
+    color: #fafafa;
+}
+
 @media (max-width: 1000px) {
     .sub_content {
         padding: 0;
