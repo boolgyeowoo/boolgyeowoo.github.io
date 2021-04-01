@@ -1,3 +1,11 @@
+.title {
+    
+}
+
+#logo {
+    margin: 20px 0 36px 0;
+}
+
 #chiv_logo {
     height: 100px
 }
@@ -10,6 +18,44 @@
 }
 
 .maincontent {
-    width: 50vw;
+    width: 45vw;
     max-width: 1536px;
+}
+
+#description {
+    font-weight: 500;
+}
+
+.non-comm, .comm {
+    margin: 72px 0;
+}
+
+.sub_title {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 36px;
+}
+
+.ccl {
+    font-style: bold;
+}
+
+.bold {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin-top: 48px;
+}
+
+a.link {
+    color: #111111;
+    font-weight: 700;
+    border-bottom: 1px solid transparent;
+}
+
+a.link:hover {
+    border-bottom: 1px solid #111111;
 }
