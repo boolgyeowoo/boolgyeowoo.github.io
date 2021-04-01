@@ -10,7 +10,7 @@ by Pierre Bonnin - @PierreBonninPRO - 2015
       var defaults = {
         item : '.wall-item',
         columnClass : '.wall-column',
-        resize:false
+        resize:true
       }
 
       var prm = $.extend(defaults, options);
