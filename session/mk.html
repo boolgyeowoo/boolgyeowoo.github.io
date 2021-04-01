@@ -95,17 +95,6 @@
     <footer>
         <div>Copyright 2021. boolgyeowoo All rights reserved.</div>
     </footer>
-    <script>
-        var wallfun = () => $('.wall').jaliswall({item:'.wall-item'})
-        var globalResizeTimer = null;
-        $(document).ready(function() {
-            $(window).resize(function() {
-                if(globalResizeTimer != null) window.clearTimeout(globalResizeTimer);
-                globalResizeTimer = window.setTimeout(() => wallfun(), 200);
-            });
-            wallfun();
-        });
-    </script>
 </body>
 
 </html>
