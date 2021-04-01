@@ -15,7 +15,7 @@ window.onload = function () {
     }
     else {
         var background_img = "img/index/home_l_";
-        var number = Math.floor(Math.random() * 3) + 1;
+        var number = Math.floor(Math.random() * 4) + 1;
         var container = document.getElementById("bgImage");
         background_img += number + ".jpg";
         container.style.backgroundImage = "url('" + background_img + "')";
