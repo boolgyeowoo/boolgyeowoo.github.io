@@ -39,12 +39,12 @@ function populateSessionBars(db) {
 
 function populateSessionNav(db) {
     let currentPage = "session/"+location.href.split("/").slice(-1);
-    let output = '<div class="sub_content"><ul class="sub_menu"><li><a href="../session.html" class="sub_link">session list</a></li>';
+    let output = '<div class="sub_content"><ul class="sub_menu"><li class="columngap"><a href="../session.html" class="sub_link">session list</a></li>';
     
     Object.keys(db).forEach(id =>
         {
             let css_class = (currentPage == db[id].href || currentPage == db[id].href2) ? "sub_link selected" : "sub_link";
-            output += `<li><a href="../${db[id].href}" class="${css_class}">${db[id].full_name}</a></li>`;
+            output += `<li class="columngap"><a href="../${db[id].href}" class="${css_class}">${db[id].full_name}</a></li>`;
         }
     );
     

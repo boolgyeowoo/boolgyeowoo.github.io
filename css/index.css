@@ -127,7 +127,6 @@ footer {
     align-items: center;
     height: 6vh;
     text-align: justify;
-    -webkit-column-count: 4;
     column-count: 4;
     margin: 0px;
     padding: 0px;
@@ -226,9 +225,8 @@ footer {
         width: 60vw;
     }
     
-    .nav_main {
-        -webkit-column-gap: 5vw;
-        column-gap: 5vw;
+    .columngap {
+        margin: 0 2.5vw;
     }
     
     .nav_link {
@@ -238,9 +236,8 @@ footer {
 }
 
 @media (min-width: 480px) and (max-width: 599px) {
-    .nav_main {
-        -webkit-column-gap: 3vw;
-        column-gap: 3vw;
+    .columngap {
+        margin: 0 1.5vw;
     }
     
     #name {
@@ -249,9 +246,8 @@ footer {
 }
 
 @media (min-width: 430px) and (max-width: 479px) {
-    .nav_main {
-        -webkit-column-gap: 1vw;
-        column-gap: 1vw;
+    .columngap {
+        margin: 0 0.5vw;
     }
     
     .nav_link {
@@ -265,10 +261,10 @@ footer {
 }
 
 @media (max-width: 429px) {
-    .nav_main {
-        -webkit-column-gap: 0.5vw;
-        column-gap: 0.5vw;
+    .columngap {
+        margin: 0 0.25px;
     }
+    
     .nav_link {
         font-size: 0.9rem;
         min-width: 82px;
@@ -286,8 +282,7 @@ footer {
         height: 20vh;
     }
     
-    .nav_main {
-        -webkit-column-gap: 10vw;
-        column-gap: 10vw;
+    .columngap {
+        margin: 0 5vw;
     }
 }

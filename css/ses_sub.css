@@ -29,13 +29,14 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    -webkit-column-count: 7;
     column-count: 7;
     margin: 0;
     height: 75px;
-    -webkit-column-gap: 48px;
-    column-gap: 48px;
     padding: 0;
+}
+
+.columngap {
+    margin: 0 24px;
 }
 
 .sub_link {
