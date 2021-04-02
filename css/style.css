@@ -153,6 +153,13 @@ p {
     text-align: center;
 }
 
+.solid_line {
+    height: 0px;
+    width: 55vw;
+    border: 1px solid #d1d1d1;
+    margin: 24px 0;
+}
+
 footer {
     position: relative;
     width: 100%;
@@ -262,6 +269,10 @@ footer {
     
     p {
         width: 75vw;
+    }
+    
+    .solid_line {
+        width: 80vw;
     }
     
     footer {

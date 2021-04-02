@@ -1,25 +1,29 @@
-.title {
-    
+.maincontent {
+    width: 50vw;
+    max-width: 1536px;
+}
+
+.about {
+    margin-bottom: 48px;
 }
 
 #logo {
     margin: 20px 0 36px 0;
+    display: flex;
+    align-items: center;
 }
 
 #chiv_logo {
-    height: 100px
-}
-
-.chiv_studio {
     background-color: #fff;
     box-sizing: content-box;
-    display: inline-block;
     padding: 5px;
+    height: 100px;
 }
 
-.maincontent {
-    width: 45vw;
-    max-width: 1536px;
+.logoimg {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
 }
 
 #description {
@@ -52,10 +56,17 @@
 
 a.link {
     color: #111111;
-    font-weight: 700;
     border-bottom: 1px solid transparent;
 }
 
 a.link:hover {
     border-bottom: 1px solid #111111;
+}
+
+.korbold {
+    font-weight: 700;
+}
+
+.enbold {
+    font-weight: 500;
 }
