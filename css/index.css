@@ -127,6 +127,7 @@ footer {
     align-items: center;
     height: 6vh;
     text-align: justify;
+    -webkit-column-count: 4;
     column-count: 4;
     margin: 0px;
     padding: 0px;
@@ -226,6 +227,7 @@ footer {
     }
     
     .nav_main {
+        -webkit-column-gap: 5vw;
         column-gap: 5vw;
     }
     
@@ -237,6 +239,7 @@ footer {
 
 @media (min-width: 480px) and (max-width: 599px) {
     .nav_main {
+        -webkit-column-gap: 3vw;
         column-gap: 3vw;
     }
     
@@ -247,6 +250,7 @@ footer {
 
 @media (min-width: 430px) and (max-width: 479px) {
     .nav_main {
+        -webkit-column-gap: 1vw;
         column-gap: 1vw;
     }
     
@@ -262,6 +266,7 @@ footer {
 
 @media (max-width: 429px) {
     .nav_main {
+        -webkit-column-gap: 0.5vw;
         column-gap: 0.5vw;
     }
     .nav_link {
@@ -282,6 +287,7 @@ footer {
     }
     
     .nav_main {
+        -webkit-column-gap: 10vw;
         column-gap: 10vw;
     }
 }
