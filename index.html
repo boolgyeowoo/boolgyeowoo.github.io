@@ -9,11 +9,13 @@ minimum-scale=1.0, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="script/bgimg.js"></script>
-    <meta content="photos by boolgyeowoo" name="description" >
+    <script type="text/javascript" src="script/detect_ie.js"></script>
+    <meta content="photos by boolgyeowoo" name="description">
 </head>
 
-<body id="bgImage">
+<body id="bgImage" onload="random_BG(), detectIE();">
     <div class="container">
         <div class="homelogo">
             <a href="featured.html">
