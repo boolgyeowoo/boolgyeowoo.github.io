@@ -156,6 +156,7 @@ p {
 .solid_line {
     height: 0px;
     width: 55vw;
+    max-width: 1600px;
     border: 1px solid #d1d1d1;
     margin: 24px 0;
 }

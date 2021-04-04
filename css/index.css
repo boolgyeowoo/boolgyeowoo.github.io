@@ -52,13 +52,12 @@ div.homelogo {
     align-items: center;
     padding: 10px;
     position: relative;
-    top: 3vh;
+    margin: 5vh 0 0 0;
     font-family: 'Montserrat';
     font-style: sans-serif;
     font-weight: 200;
     font-size: 2rem;
     color: #fafafa;
-    margin: 0;
 }
 
 /*logo transition*/
@@ -144,9 +143,7 @@ footer {
 #twitter,
 #mail,
 #twitch {
-    width: 3vw;
-    max-width: 48px;
-    min-width: 32px;
+    width: 48px;
 }
 
 #twitch {
@@ -172,13 +169,6 @@ footer {
         transition: background-color 150ms, width 150ms;
         width: 55vw;
         min-width: 275px;
-    }
-    
-    #twitter,
-    #mail,
-    #twitch {
-        width: 5vw;
-        min-width: 32px;
     }
 }
 /*for landscape browser window*/
@@ -275,6 +265,14 @@ footer {
     }
 }
 
+/*sns icon size*/
+@media (orientation: portrait) and (max-width: 799px) {
+    #twitter,
+    #mail,
+    #twitch {
+        width: 32px;
+    }
+}
 
 /*for desktop browser*/
 @media (min-width: 800px) {
