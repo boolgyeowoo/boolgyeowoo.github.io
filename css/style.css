@@ -34,7 +34,7 @@ li.nav_list {
 }
 
 header {
-    padding-top: 5px;
+    padding: 5px 0;
     background-color: #d1d1d1;
 }
 
@@ -161,6 +161,22 @@ p {
     margin: 24px 0;
 }
 
+.bttop {
+    color: #7f7f7f;
+    font-size: 1rem;
+    position: fixed;
+    z-index: 1;
+    bottom: 36px;
+    right: 36px;
+    background-color: rgba(250, 250, 250, 0.75);
+    padding: 4px 8px;
+    border-radius: 2px;
+}
+
+.bttop:hover {
+    background-color: rgba(209, 209, 209, 0.75);
+}
+
 footer {
     position: relative;
     width: 100%;
@@ -274,6 +290,10 @@ footer {
     
     .solid_line {
         width: 80vw;
+    }
+    
+    .bttop {
+        font-size: 0.9rem;
     }
     
     footer {
