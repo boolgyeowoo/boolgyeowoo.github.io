@@ -16,8 +16,8 @@ Fursuit Photography Portfolio Website by boolgyeowoo
 * For Codes
     + Copyright 2021. boolgyeowoo and CuriousTorvald All rights reserved.
     + detect_ie.js code source from : update soon
-    + bgimg.js code source from [A] : <http://erunjoy.com/282>
-    + mobl_nav.js code source from [A] : <https://choman.tistory.com/14>
+    + bgimg.js code source from : <http://erunjoy.com/282> [A]
+    + mobl_nav.js code source from : <https://choman.tistory.com/14> [A]
     + jaliswall.js code source from : <https://www.jqueryscript.net/layout/Pinterest-like-Responsive-Grid-System-with-jQuery-jaliswall.html>
     + session_nav.js by [```@curioustorvald```](https://github.com/curioustorvald)
     
