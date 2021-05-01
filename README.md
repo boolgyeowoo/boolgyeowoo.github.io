@@ -14,6 +14,7 @@ Fursuit Photography Portfolio Website by boolgyeowoo
 
 # Copyright
 * For Codes
+    + MIT License
     + [```LICENSE```](https://github.com/boolgyeowoo/boolgyeowoo.github.io/blob/master/LICENSE)
     + [```COPYING```](https://github.com/boolgyeowoo/boolgyeowoo.github.io/blob/master/COPYING)
 
