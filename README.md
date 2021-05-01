@@ -14,13 +14,21 @@ Fursuit Photography Portfolio Website by boolgyeowoo
 
 # Copyright
 * For Codes
-    + update soon
+    + Copyright 2021. boolgyeowoo and CuriousTorvald All rights reserved.
+    + detect_ie.js code source from : update soon
+    + bgimg.js code source from[^1] : <http://erunjoy.com/282>
+    + mobl_nav.js code source from[^1] : <https://choman.tistory.com/14>
+    + jaliswall.js code source from : <https://www.jqueryscript.net/layout/Pinterest-like-Responsive-Grid-System-with-jQuery-jaliswall.html>
+    + session_nav.js by @curioustorvald
+    
+    [^1]: edited some codes.
 
 * For Images   
     + Copyright 2020. boolgyeowoo All rights reserved.   
     (트위터 및 트위치 로고 아이콘 등 일부 이미지 제외)   
-    (except for logo icon of Twitter and Twitch, etc)   
-    
+    (except for logo icon of Twitter, Twitch, and Github etc)   
+      저작자의 허가 없이 사진을 재업로드하는것은 금지됩니다   
+      All pictures cannot be re-upload without permission. (You can't use these pictures for your webpage or program)
 
 # contact
    * Twitter : [```@boolgyeowoo```](https://twitter.com/boolgyeowoo)
