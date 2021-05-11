@@ -8,9 +8,8 @@
 
 ******
 
-Fursuit photography portfolio website by boolgyeowoo\
-\
-\
+Fursuit photography portfolio website by boolgyeowoo
+
 * Internet Explorer is not supported.
 
 
