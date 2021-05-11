@@ -1,4 +1,4 @@
-function random_BG() {
+window.onload = function() {
     if((window.innerWidth / window.innerHeight) <=0.875) {
         var background_img = "img/index/home_s_"; /*small(mobile) size window*/
         var number = Math.floor(Math.random() * 5) + 1;
