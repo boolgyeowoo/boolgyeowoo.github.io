@@ -20,7 +20,7 @@ Fursuit photography portfolio website by boolgyeowoo
     + [```COPYING```](https://github.com/boolgyeowoo/boolgyeowoo.github.io/blob/master/COPYING)
 
 * For Images
-    + Copyright 2020. boolgyeowoo All rights reserved.\
+    + Copyright 2021. boolgyeowoo All rights reserved.\
       저작자 본인의 허가 없이 사진을 재업로드하는것은 금지됩니다\
       All pictures cannot be re-upload without permission.\
       (You can't use these pictures for your webpage or program)
