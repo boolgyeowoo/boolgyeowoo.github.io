@@ -244,7 +244,7 @@ footer {
         position: relative;
         top: var(--nw3);
         padding: 1vh 0;
-/*        z-index: 999;*/
+        z-index: 999;
         background-color: #fafafa;
         font-size: 1.125rem;
         margin: 0;
