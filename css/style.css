@@ -51,7 +51,7 @@ div.mainheader {
 }
 */
 
-.menu_icon {
+#menu_icon {
     display: inline-block;
     z-index: 1;
     position: absolute;
@@ -79,7 +79,7 @@ div.mainheader {
     left: 1px;
 }
 
-.menu_icon:active {
+#menu_icon:active {
     transition: all 250ms;
 }
 
@@ -148,7 +148,7 @@ img.sitelogo:active {
     width: 20vw;
 }
 
-ul.nav_main {
+ul#nav_main {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -239,7 +239,7 @@ footer {
         width: 100%;
     }
 
-    ul.nav_main {
+    ul#nav_main {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -254,7 +254,7 @@ footer {
         width: 100%;
     }
 
-    ul.nav_main > li {
+    ul#nav_main > li {
         width: 100%;
     }
 
