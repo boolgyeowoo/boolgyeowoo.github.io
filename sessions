@@ -1,0 +1,6 @@
+<script type="text/javascript" src="script/session_nav.js"></script>
+<h1 class="title">Sessions</h1>
+<div id="sesson_nav_root" class="session_nav">
+    <!-- TO BE FILLED BY THE COMPUTER LORD -->
+    <div onload="init_main(); function () {console.log(1)}"></div>
+</div>
