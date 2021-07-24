@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="user-scalable=yes, width=device-width">
+    <meta name="viewport" content="user-scalable=yes, initial-scale=1.0, maximum-scale=1.0,
+minimum-scale=1.0, width=device-width">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/contact.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -14,25 +15,19 @@
 </head>
 
 <body>
-    <header class="header">
+    <header>
         <div class="mainheader">
             <div class="headercontent">
-                <div><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg" alt=""></a></div>
-                <span class="menu_icon">
+                <div class="sitelogo"><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg"></a></div>
+                <span id="menu_icon" onclick="$('#nav_main').slideToggle(300);">
                     <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
                 </span>
-                <ul class="nav_main">
-                    <li><a class="nav_link" href="about.html">about</a></li>
-                    <li><a class="nav_link" href="featured.html">featured</a></li>
-                    <li><a class="nav_link" href="session.html">sessions</a></li>
-                    <li><a class="nav_link selected" href="contact.html">contact</a></li>
-                </ul>
             </div>
-            <ul class="nav_mobl">
-                <li><a class="nav_link_m" href="about.html">about</a></li>
-                <li><a class="nav_link_m" href="featured.html">featured</a></li>
-                <li><a class="nav_link_m" href="session.html">sessions</a></li>
-                <li><a class="nav_link_m selected" href="contact.html">contact</a></li>
+            <ul id="nav_main">
+                <li><a class="nav_link selected" href="about.html">about</a></li>
+                <li><a class="nav_link" href="featured.html">featured</a></li>
+                <li><a class="nav_link" href="session.html">sessions</a></li>
+                <li><a class="nav_link" href="contact.html">contact</a></li>
             </ul>
         </div>
     </header>
