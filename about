@@ -1,0 +1,40 @@
+<link rel="stylesheet" type="text/css" href="css/about.css">
+<div class="about">
+                <h1 class="title">About</h1>
+                <div class="logoimg"><img id="logo" src="img/BYW_logo_BK_c.svg" title="안녕하새오 여우애오 사진찌거오 털조아오 🐾"></div>
+                <p>안녕하세요 붉여우입니다.</p>
+                <p>2020년 1월부터 퍼슈트 촬영회와 행사에서 퍼슈트 사진사로 활동하고 있습니다.</p>
+                <p>퍼슈트 캐릭터의 개성과 본연의 색채를 살리는 사진을 지향합니다.</p>
+                <p>최고의 퀄리티를 위해 작업물 하나하나에 심혈을 기울입니다.</p>
+                <p><br><br></p>
+                <p style="font-size: 0.925rem;">사용장비 &#58; Panasonic DC&#45;G9 &#43; Olympus M.ZD 12&#45;100mm f4 PRO</p>
+                <div class="logoimg"><a href="https://chivilt.wixsite.com/chiv-studio" title="Chiv&#45;Studio" target="_blank"><img id="chiv_logo" src="img/about/CHIV_STUDIO_logo_color.png"></a></div>
+                <p>현재 퍼리 아티스트 그룹 Chiv Studio에서 스튜디오 소속 포토그래퍼로 활동하고 있습니다.</p>
+                <p>Chiv Studio에 대해 더 자세히 알아보시려면 <a href="https://chivilt.wixsite.com/chiv-studio" class="link enbold">Chiv Studio 웹사이트</a>를 참고해주시기 바랍니다.</p>
+            </div>
+            <div class="solid_line"></div>
+            <div id="copyright">
+                <h1 class="title">Copyright</h1>
+                <h3 id="description">제 작업물들에는 크리에이티브 커먼즈 라이센스&#40;CCL&#41;가 적용됩니다.</h3>
+                <div class="non-comm">
+                    <h3 class="sub_title">비상업 촬영</h3>
+                    <p>개인&#47;소규모 촬영회에서의 무료촬영 또는 <br>퍼슈트관련 공개, 공식 행사에서의 무료촬영 등</p>
+                    <ul>
+                        <li class="bold">모델의 경우 &ndash; CC BY&#45;NC&#45;SA</li>
+                        <p>출처를 표기하고 같은 CC 라이센스를 사용하는 경우에 한해서 그대로 혹은 편집하여 사용하실 수 있습니다.<br />단, 영리적 목적으로는 사용하실 수 없습니다.</p>
+                        <p>&bull; 영리적 목적으로 사용하시고 싶으신 경우 <a href="https://twitter.com/boolgyeowoo" class="link korbold" title="&#64;boolgyeowoo">트위터</a>로 문의해주시기 바랍니다.</p>
+                        <li class="bold">제 3자의 경우 &ndash; CC BY&#45;NC&#45;ND</li>
+                        <p>편집 및 수정 없이 출처를 표기하고 같은 CC 라이센스를 사용하며 비영리적 목적으로만 사용이 가능합니다.</p>
+                    </ul>
+                </div>
+                <div class="comm">
+                    <h3 class="sub_title">상업촬영</h3>
+                    <p>커미션, 외주작업 등의 페이촬영</p>
+                    <ul>
+                        <li class="bold">모델의 경우 &ndash; CC BY&#45;SA</li>
+                        <p>출처를 표기하고 같은 CC 라이센스를 사용하는 경우 영리적&middot;비영리적 목적으로 사용하실 수 있습니다.<br>편집 및 수정 또한 가능합니다</p>
+                        <li class="bold">제 3자의 경우</li>
+                        <p>작업물을 사용하실 수 없습니다.</p>
+                    </ul>
+                </div>
+            </div>

@@ -34,13 +34,22 @@ minimum-scale=1.0, width=device-width">
     <div class="contentbox">
         <!--       main contents will be placed in here     -->
         <div class="maincontent">
-            
+            <input type="button" value="test" onclick="fetchPage('about')">
         </div>
     </div>
     <a href="#" class="bttop">&uarr; top</a>
     <footer>
         <div>Copyright 2021. boolgyeowoo All rights reserved.</div>
     </footer>
+    <script>
+        function fetchPage(pgName) {
+            fetch(pgName).then(function(response) {
+                response.text().then(function(text) {
+                    document.querySelector('.maincontent').innerHTML = text;
+                })
+            });
+        }
+    </script>
 </body>
 
 </html>
