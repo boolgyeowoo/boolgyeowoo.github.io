@@ -41,6 +41,11 @@ minimum-scale=1.0, width=device-width">
     <footer>
         <div>Copyright 2021. boolgyeowoo All rights reserved.</div>
     </footer>
+    <script>
+        window.addEventListener('hashchange', () => {
+            document.getElementByClass(".maincontent").innderHTML = routes[window.location.hash.replace('#!', '')]
+        })
+    </script>
 </body>
 
 </html>

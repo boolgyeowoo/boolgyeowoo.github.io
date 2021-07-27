@@ -1,0 +1,23 @@
+{
+    "about": {
+        "pagetitle": "about",
+        "href": "about",
+        "css": "about",
+        "content": "about",
+        "imgwall": false,
+        "imgnum": null,
+        "imgloca": null,
+        "sessionlist": false,
+        "sessionnav" : false,
+        "" : ""
+    },
+    "featured": {
+        
+    },
+    "session": {
+        
+    },
+    "contact": {
+        
+    }
+}
