@@ -11,7 +11,7 @@ by Pierre Bonnin - @PierreBonninPRO - 2015
         item : '.wall-item',
         columnClass : '.wall-column',
         resize:true
-      }
+      };
 
       var prm = $.extend(defaults, options);
 
