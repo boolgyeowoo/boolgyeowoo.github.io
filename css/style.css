@@ -247,12 +247,6 @@ footer {
         font-size: 1.125rem;
         margin: 0;
         width: 100%;
-        transition: height .25s ease;
-        overflow: hidden;
-    }
-    
-    ul#nav_main:not(.active) {
-        display: none;
     }
     
     ul#nav_main > li {

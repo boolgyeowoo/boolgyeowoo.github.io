@@ -9,7 +9,6 @@ minimum-scale=1.0, width=device-width">
     <link rel="stylesheet" type="text/css" href="css/about.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="script/mobl_nav.js"></script>
-    <script type="text/javascript" src="script/toggle.js"></script>
     <title>about &#45; boolgyeowoo photo</title>
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     <link rel="icon" href="favicon.png" type="image/png">
@@ -20,7 +19,7 @@ minimum-scale=1.0, width=device-width">
         <div class="mainheader">
             <div class="headercontent">
                 <div class="sitelogo"><a href="index.html"><img class="sitelogo" src="img/BYW_logo_BK_c.svg"></a></div>
-                <span id="menu_icon">
+                <span id="menu_icon" onclick="$('#nav_main').slideToggle(300);">
                     <span class="icon_bar" id="iconbar_top"></span><span class="icon_bar" id="iconbar_mid"></span><span class="icon_bar" id="iconbar_btm"></span>
                 </span>
             </div>
