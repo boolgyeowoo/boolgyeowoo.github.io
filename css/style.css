@@ -241,15 +241,20 @@ footer {
         justify-content: center;
         align-items: center;
         position: relative;
-        top: var(--nw3);
         padding: 1vh 0;
         z-index: 999;
         background-color: #fafafa;
         font-size: 1.125rem;
         margin: 0;
         width: 100%;
+        transition: height .25s ease;
+        overflow: hidden;
     }
-
+    
+    ul#nav_main:not(.active) {
+        display: none;
+    }
+    
     ul#nav_main > li {
         width: 100%;
     }
