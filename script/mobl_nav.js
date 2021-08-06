@@ -8,7 +8,7 @@ window.onload = function () {
     var hide = function (elem) {
         elem.style.display = 'none';
     };
-    function rsWidth(elem) {
+    var rsWidth = function(elem) {
         if (window.innerWidth >= 800) {
             show(elem);
         } else {
