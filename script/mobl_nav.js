@@ -1,5 +1,4 @@
-
-window.onload = function () {
+var moblNav = function () {
 
     var nav = document.getElementById('nav_main');
     var show = function (elem) {
