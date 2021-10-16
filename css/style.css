@@ -211,6 +211,7 @@ footer {
         top: 3.5vw;
         width: 24px;
         height: 24px;
+        cursor: pointer;
     }
 
     #iconbar_top {
