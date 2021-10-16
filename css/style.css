@@ -248,6 +248,7 @@ footer {
         font-size: 1.125rem;
         margin: 0;
         width: 100%;
+        transition: all 0.35s ease-in-out;
     }
     
     ul#nav_main > li {
