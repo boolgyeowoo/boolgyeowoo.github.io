@@ -237,7 +237,8 @@ footer {
     }
 
     ul#nav_main {
-        display: flex;
+        display: none;
+        height: 0;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -249,6 +250,12 @@ footer {
         margin: 0;
         width: 100%;
         transition: all 0.35s ease-in-out;
+    }
+    
+    ul#nav_main.open {
+        transition: all 0.35s ease-in-out;
+        display: flex;
+        height: auto;
     }
     
     ul#nav_main > li {
