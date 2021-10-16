@@ -113,7 +113,7 @@ img.sitelogo:active {
     width: 20vw;
 }
 
-ul#nav_main {
+ul.nav_main {
     position: relative;
     display: flex;
     flex-direction: row;
@@ -236,7 +236,7 @@ footer {
         transition: all 250ms;
     }
 
-    ul#nav_main {
+    ul.nav_main {
         display: none;
         height: 0;
         flex-direction: column;
@@ -252,13 +252,13 @@ footer {
         transition: all 0.35s ease-in-out;
     }
     
-    ul#nav_main open {
+    ul.nav_main open {
         transition: all 0.35s ease-in-out;
         display: flex;
         height: auto;
     }
     
-    ul#nav_main > li {
+    ul.nav_main > li {
         width: 100%;
     }
 
