@@ -28,12 +28,12 @@ var moblNav = function () {
         };
     };
     icon.addEventListener('click', function (event) {
-        if (nav.className != 'open') {
+        if (nav.className != 'nav_main open') {
 //            show(nav);
-            nav.className = 'open';
+            nav.className = 'nav_main open';
         } else {
 //            hide(nav);
-            nav.className = '';
+            nav.className = 'nav_main';
         };
     });
 }
