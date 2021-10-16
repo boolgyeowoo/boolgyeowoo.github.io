@@ -29,10 +29,10 @@ var moblNav = function () {
     };
     icon.addEventListener('click', function (event) {
         if (nav.className != 'open') {
-            show(nav);
+//            show(nav);
             nav.className = 'open';
         } else {
-            hide(nav);
+//            hide(nav);
             nav.className = '';
         };
     });
