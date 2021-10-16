@@ -1,6 +1,6 @@
 var moblNav = function () {
 
-    var nav = document.getElementById('nav_main');
+    var nav = document.getElementByClass('nav_main');
     var icon = document.getElementById('menu_icon');
     var show = function (elem) {
         elem.style.display = 'flex';
