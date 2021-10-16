@@ -252,7 +252,7 @@ footer {
         transition: all 0.35s ease-in-out;
     }
     
-    ul#nav_main.open {
+    ul#nav_main open {
         transition: all 0.35s ease-in-out;
         display: flex;
         height: auto;
