@@ -38,7 +38,7 @@ var moblNav = function () {
               nav.addEventListener('transitionend', function () {
                 nav.classList.remove('open');
               }, {
-                once: true;
+                once: true
               });
               
             }
