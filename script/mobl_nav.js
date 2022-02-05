@@ -10,14 +10,14 @@ var moblNav = function () {
         elem.style.display = 'none';
     };
     var rsWidth = function(elem) {
-        if (window.innerWidth >= 800) {
+        if (window.innerWidth > 800) {
             show(elem);
         } else {
             hide(elem);
         }
     }
     
-    if (window.innerWidth >= 800) {
+    if (window.innerWidth > 800) {
         show(nav);
         window.onresize = function() {
             rsWidth(nav);
